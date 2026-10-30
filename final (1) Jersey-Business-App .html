@@ -1,0 +1,3099 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark"><head><script data-bard-client-injected="true">(function(firebaseConfig, initialAuthToken, appId) {
+        window.__firebase_config = firebaseConfig;
+        window.__initial_auth_token = initialAuthToken;
+        window.__app_id = appId;
+            })("\n{\n  \"apiKey\": \"AIzaSyCqyCcs2R2e7AegGjvFAwG98wlamtbHvZY\",\n  \"authDomain\": \"bard-frontend.firebaseapp.com\",\n  \"projectId\": \"bard-frontend\",\n  \"storageBucket\": \"bard-frontend.firebasestorage.app\",\n  \"messagingSenderId\": \"175205271074\",\n  \"appId\": \"1:175205271074:web:2b7bd4d34d33bf38e6ec7b\"\n}\n","eyJhbGciOiJSUzI1NiIsImtpZCI6IjExNjRiNzdiNDMzZDdhMDAyMWI4NjE4YjhjYTU3ZTMyZGI5MWUxMTMiLCJ0eXAiOiJKV1QifQ.eyJzdWIiOiJmaXJlYmFzZS1hZG1pbnNkay1mYnN2Y0BiYXJkLWZyb250ZW5kLmlhbS5nc2VydmljZWFjY291bnQuY29tIiwiYXVkIjoiaHR0cHM6Ly9pZGVudGl0eXRvb2xraXQuZ29vZ2xlYXBpcy5jb20vZ29vZ2xlLmlkZW50aXR5LmlkZW50aXR5dG9vbGtpdC52MS5JZGVudGl0eVRvb2xraXQiLCJ1aWQiOiIwMjM5NjYyMjkzOTY2OTE4OTM4MiIsImlzcyI6ImZpcmViYXNlLWFkbWluc2RrLWZic3ZjQGJhcmQtZnJvbnRlbmQuaWFtLmdzZXJ2aWNlYWNjb3VudC5jb20iLCJjbGFpbXMiOnsiYXBwSWQiOiJjX2ZjZmFkYTliOTZiYzQ0MzdfSmVyc2V5IEJ1c2luZXNzIEFwcC5odG1sLTQxNiJ9LCJleHAiOjE3OTI3NjcyNTUsImlhdCI6MTc5Mjc2MzY1NSwiYWxnIjoiUlMyNTYifQ.mMyqVKxUYhgPCUZWUkoEF0LeuiVn3RaR5o7OC0-CHSRomHJBhLN7EkLDLU-sP2v6PC6LYEbFKaVDx4oYCe-A2ot7TKh8FGwaO0VbisCjQ7oyrgB1pCnRCRZKneraeHUex3ENdBTouHqh-N7_wn1Wc9StrLUBJsV7L-ixBphwFWB-TKDk7XqRoOhswdWpRK7EcQw3w0Z5Kpi3HVPRKMuEK6cKJOm6V6_ivF8ZzYzOxHAR9CySIxV4FArDliFx-r6pyeoxBTFvBa-g1tQUjQXIOp3kf0jrtw5_LjT9sWnp04u_lufXVCjIv9d7YnLwNTvRVh4-iH8QwMVMUCtpSMvngw","c_fcfada9b96bc4437_Jersey Business App.html-416")</script><script data-bard-client-injected="true">
+  document.addEventListener('input', (event) => {
+    if (event.target && (event.target.isContentEditable || event.target.hasAttribute('contenteditable'))) {
+      const clonedDoc = document.cloneNode(true);
+      const injectedScripts = clonedDoc.querySelectorAll('[data-bard-client-injected="true"]');
+      injectedScripts.forEach(el => el.remove());
+      window.parent.postMessage({
+        type: 'inlineEdit',
+        html: '<!DOCTYPE html>\n' + clonedDoc.documentElement.outerHTML
+      }, '*');
+    }
+  });
+</script><script data-bard-client-injected="true">(function(){'use strict';window.addEventListener("message",a=>{a.data&&a.data.type==="SUPPLEMENTAL_DATA_UPDATE"&&window.dispatchEvent(new CustomEvent("supplementaldataupdate",{detail:a.data.data}))});}).call(this);
+</script><script data-bard-client-injected="true">(function(){'use strict';var h=typeof Object.defineProperties=="function"?Object.defineProperty:function(a,b,c){if(a==Array.prototype||a==Object.prototype)return a;a[b]=c.value;return a};function l(a){a=["object"==typeof globalThis&&globalThis,a,"object"==typeof window&&window,"object"==typeof self&&self,"object"==typeof global&&global];for(var b=0;b<a.length;++b){var c=a[b];if(c&&c.Math==Math)return c}throw Error("Cannot find global object");}var n=l(this);
+function p(a,b){if(b)a:{var c=n;a=a.split(".");for(var d=0;d<a.length-1;d++){var e=a[d];if(!(e in c))break a;c=c[e]}a=a[a.length-1];d=c[a];b=b(d);b!=d&&b!=null&&h(c,a,{configurable:!0,writable:!0,value:b})}}function r(a){function b(d){return a.next(d)}function c(d){return a.throw(d)}return new Promise(function(d,e){function f(g){g.done?d(g.value):Promise.resolve(g.value).then(b,c).then(f,e)}f(a.next())})}function t(a){return r(a())}
+p("Object.values",function(a){return a?a:function(b){var c=[],d;for(d in b)Object.prototype.hasOwnProperty.call(b,d)&&c.push(b[d]);return c}});p("Array.prototype.includes",function(a){return a?a:function(b,c){var d=this;d instanceof String&&(d=String(d));var e=d.length;c=c||0;for(c<0&&(c=Math.max(c+e,0));c<e;c++){var f=d[c];if(f===b||Object.is(f,b))return!0}return!1}});/*
+
+ MIT License
+
+ Copyright (c) 2017-2023 W.Y.
+
+ Permission is hereby granted, free of charge, to any person obtaining a copy
+ of this software and associated documentation files (the "Software"), to deal
+ in the Software without restriction, including without limitation the rights
+ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ copies of the Software, and to permit persons to whom the Software is
+ furnished to do so, subject to the following conditions:
+
+ The above copyright notice and this permission notice shall be included in
+ all copies or substantial portions of the Software.
+
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ SOFTWARE.
+
+*/
+function u(a,b){var c=a.style;b.backgroundColor&&(c.backgroundColor=b.backgroundColor);b.width&&(c.width=`${b.width}px`);b.height&&(c.height=`${b.height}px`);var d=b.style;d!=null&&Object.keys(d).forEach(e=>{c[e]=d[e]})};var v=(()=>{var a=0;return()=>{a+=1;return`u${`0000${(Math.random()*1679616<<0).toString(36)}`.slice(-4)}${a}`}})();function w(a){var b=[];for(let c=0,d=a.length;c<d;c++)b.push(a[c]);return b}let x=null;function y(a={}){return x?x:a.u?x=a.u:x=w(window.getComputedStyle(document.documentElement))}function z(a,b){return(a=(a.ownerDocument.defaultView||window).getComputedStyle(a).getPropertyValue(b))?parseFloat(a.replace("px","")):0}
+function A(a,b={}){var c;if(!(c=b.width)){c=z(a,"border-left-width");var d=z(a,"border-right-width");c=a.clientWidth+c+d}(b=b.height)||(b=z(a,"border-top-width"),d=z(a,"border-bottom-width"),b=a.clientHeight+b+d);return{width:c,height:b}}function B(a){return new Promise((b,c)=>{var d=new Image;d.onload=()=>{d.decode().then(()=>{requestAnimationFrame(()=>b(d))})};d.onerror=c;d.crossOrigin="anonymous";d.decoding="async";d.src=a})}
+function C(a){return t(function*(){return Promise.resolve().then(()=>(new XMLSerializer).serializeToString(a)).then(encodeURIComponent).then(b=>`data:image/svg+xml;charset=utf-8,${b}`)})}
+function D(a,b,c){return t(function*(){var d=document.createElementNS("http://www.w3.org/2000/svg","svg"),e=document.createElementNS("http://www.w3.org/2000/svg","foreignObject");d.setAttribute("width",`${b}`);d.setAttribute("height",`${c}`);d.setAttribute("viewBox",`0 0 ${b} ${c}`);e.setAttribute("width","100%");e.setAttribute("height","100%");e.setAttribute("x","0");e.setAttribute("y","0");e.setAttribute("externalResourcesRequired","true");d.appendChild(e);e.appendChild(a);return C(d)})}
+var E=(a,b)=>{if(a instanceof b)return!0;a=Object.getPrototypeOf(a);return a===null?!1:a.constructor.name===b.name||E(a,b)};function F(a,b){return y(b).map(c=>{var d=a.getPropertyValue(c),e=a.getPropertyPriority(c);return`${c}: ${d}${e?" !important":""};`}).join(" ")}
+function G(a,b,c,d){a=window.getComputedStyle(a,c);var e=a.getPropertyValue("content");if(e!==""&&e!=="none"){var f=v();try{b.className=`${b.className} ${f}`}catch(k){return}e=document.createElement("style");var g=e.appendChild;c=`.${f}:${c}`;a.cssText?(d=a.getPropertyValue("content"),d=`${a.cssText} content: '${d.replace(/'|"/g,"")}';`):d=F(a,d);g.call(e,document.createTextNode(`${c}{${d}}`));b.appendChild(e)}};function H(a){return a.search(/^(data:)/)!==-1}function I(a,b,c){return t(function*(){var d=yield fetch(a,b);if(d.status===404)throw Error(`Resource "${d.url}" not found`);var e=yield d.blob();return new Promise((f,g)=>{var k=new FileReader;k.onerror=g;k.onloadend=()=>{try{f(c({v:d,result:k.result}))}catch(m){g(m)}};k.readAsDataURL(e)})})}const J={};function aa(a,b,c){var d=a.replace(/\?.*/,"");c&&(d=a);/ttf|otf|eot|woff2?/i.test(d)&&(d=d.replace(/.*\//,""));return b?`[${b}]${d}`:d}
+function K(a,b,c){return t(function*(){var d=aa(a,b,c.F);if(J[d]!=null)return J[d];c.B&&(a+=(/\?/.test(a)?"&":"?")+(new Date).getTime());try{let f=yield I(a,c.l,({v:g,result:k})=>{b||(b=g.headers.get("Content-Type")||"");return k.split(/,/)[1]});var e=`data:${b};base64,${f}`}catch(f){e=c.o||""}return J[d]=e})};const L={R:"application/font-woff",S:"application/font-woff",O:"application/font-truetype",C:"application/vnd.ms-fontobject",J:"image/png",H:"image/jpeg",G:"image/jpeg",D:"image/gif",N:"image/tiff",M:"image/svg+xml",P:"image/webp"};function M(a){return(a=/\.([^./]*?)$/g.exec(a))?a[1]:""};function ba(a){return t(function*(){var b=a.toDataURL();return b==="data:,"?a.cloneNode(!1):B(b)})}function ca(a,b){return t(function*(){if(a.currentSrc){var c=document.createElement("canvas");let d=c.getContext("2d");c.width=a.clientWidth;c.height=a.clientHeight;d==null||d.drawImage(a,0,0,c.width,c.height);c=c.toDataURL();return B(c)}c=a.poster;c=yield K(c,L[M(c).toLowerCase()]||"",b);return B(c)})}
+function da(a,b){return t(function*(){try{let c;if(a==null?0:(c=a.contentDocument)==null?0:c.body)return yield N(a.contentDocument.body,b,!0)}catch(c){}return a.cloneNode(!1)})}function ea(a,b){return t(function*(){return E(a,HTMLCanvasElement)?ba(a):E(a,HTMLVideoElement)?ca(a,b):E(a,HTMLIFrameElement)?da(a,b):a.cloneNode(a.tagName!=null&&a.tagName.toUpperCase()==="SVG")})}
+function fa(a,b,c){return t(function*(){if(b.tagName!=null&&b.tagName.toUpperCase()==="SVG")return b;var d=[];if(a.tagName!=null&&a.tagName.toUpperCase()==="SLOT"&&a.assignedNodes)d=w(a.assignedNodes());else{let e;if(E(a,HTMLIFrameElement)&&((e=a.contentDocument)==null?0:e.body))d=w(a.contentDocument.body.childNodes);else{let f;d=w(((f=a.shadowRoot)!=null?f:a).childNodes)}}if(d.length===0||E(a,HTMLVideoElement))return b;yield d.reduce((e,f)=>e.then(()=>N(f,c)).then(g=>{g&&b.appendChild(g)}),Promise.resolve());
+return b})}function ha(a,b,c){var d=b.style;if(d){var e=window.getComputedStyle(a);e.cssText?(d.cssText=e.cssText,d.transformOrigin=e.transformOrigin):y(c).forEach(f=>{var g=e.getPropertyValue(f);f==="font-size"&&g.endsWith("px")&&(g=`${Math.floor(parseFloat(g.substring(0,g.length-2)))-.1}px`);E(a,HTMLIFrameElement)&&f==="display"&&g==="inline"&&(g="block");f==="d"&&b.getAttribute("d")&&(g=`path(${b.getAttribute("d")})`);d.setProperty(f,g,e.getPropertyPriority(f))})}}
+function ia(a,b){E(a,HTMLSelectElement)&&(b=Array.from(b.children).find(c=>a.value===c.getAttribute("value")))&&b.setAttribute("selected","")}
+function ja(a,b){return t(function*(){var c=a.querySelectorAll?a.querySelectorAll("use"):[];if(c.length===0)return a;var d={};for(var e=0;e<c.length;e++){var f=c[e].getAttribute("xlink:href");if(f){let g=document.querySelector(f);a.querySelector(f)||!g||d[f]||(d[f]=yield N(g,b,!0))}}c=Object.values(d);if(c.length){d=document.createElementNS("http://www.w3.org/1999/xhtml","svg");d.setAttribute("xmlns","http://www.w3.org/1999/xhtml");d.style.position="absolute";d.style.width="0";d.style.height="0";
+d.style.overflow="hidden";d.style.display="none";e=document.createElementNS("http://www.w3.org/1999/xhtml","defs");d.appendChild(e);for(f=0;f<c.length;f++)e.appendChild(c[f]);a.appendChild(d)}return a})}
+function N(a,b,c){return t(function*(){return c||!b.filter||b.filter(a)?Promise.resolve(a).then(d=>ea(d,b)).then(d=>fa(a,d,b)).then(d=>{E(d,Element)&&(ha(a,d,b),G(a,d,":before",b),G(a,d,":after",b),E(a,HTMLTextAreaElement)&&(d.textContent=a.value),E(a,HTMLInputElement)&&d.setAttribute("value",a.value),ia(a,d));return d}).then(d=>ja(d,b)):null})};const O=/url\((['"]?)([^'"]+?)\1\)/g,ka=/url\([^)]+\)\s*format\((["']?)([^"']+)\1\)/g,la=/src:\s*(?:url\([^)]+\)\s*format\([^)]+\)[,;]\s*)+/g;function ma(a){var b=[];a.replace(O,(c,d,e)=>{b.push(e);return c});return b.filter(c=>!H(c))}
+function na(a,b,c,d){return t(function*(){try{let e=c?(new URL(b,c||void 0)).toString():b,f;f=yield K(e,L[M(b).toLowerCase()]||"",d);return a.replace(new RegExp(`(url\\(['"]?)(${b.replace(/([.*+?^${}()|\[\]\/\\])/g,"\\$1")})(['"]?\\))`,"g"),`$1${f}$3`)}catch(e){}return a})}function oa(a,{K:b}){return b?a.replace(la,c=>{for(;;){let [d,,e]=ka.exec(c)||[];if(!e)return"";if(e===b)return`src: ${d};`}}):a}
+function P(a,b,c){return t(function*(){if(a.search(O)===-1)return a;var d=oa(a,c);return ma(d).reduce((e,f)=>e.then(g=>na(g,f,b,c)),Promise.resolve(d))})};function Q(a,b,c){return t(function*(){var d,e=(d=b.style)==null?void 0:d.getPropertyValue(a);return e?(d=yield P(e,null,c),b.style.setProperty(a,d,b.style.getPropertyPriority(a)),!0):!1})}function pa(a,b){return t(function*(){(yield Q("background",a,b))||(yield Q("background-image",a,b));(yield Q("mask",a,b))||(yield Q("-webkit-mask",a,b))||(yield Q("mask-image",a,b))||(yield Q("-webkit-mask-image",a,b))})}
+function qa(a,b){return t(function*(){var c=E(a,HTMLImageElement);if(c&&!H(a.src)||E(a,SVGImageElement)&&!H(a.href.baseVal)){var d=c?a.src:a.href.baseVal,e=yield K(d,L[M(d).toLowerCase()]||"",b);yield new Promise((f,g)=>{a.onload=f;a.onerror=b.h?(...k)=>{try{f(b.h(...k))}catch(m){g(m)}}:g;a.decode&&(a.decode=f);a.loading==="lazy"&&(a.loading="eager");c?(a.srcset="",a.src=e):a.href.baseVal=e})}})}
+function ra(a,b){return t(function*(){var c=w(a.childNodes).map(d=>R(d,b));yield Promise.all(c).then(()=>a)})}function R(a,b){return t(function*(){E(a,Element)&&(yield pa(a,b),yield qa(a,b),yield ra(a,b))})};const S={};function T(a){return t(function*(){var b=S[a];if(b!=null)return b;b=yield(yield fetch(a)).text();b={url:a,cssText:b};return S[a]=b})}function U(a,b){return t(function*(){var c=a.cssText,d=/url\(["']?([^"')]+)["']?\)/g,e=(c.match(/url\([^)]+\)/g)||[]).map(f=>t(function*(){var g=f.replace(d,"$1");g.startsWith("https://")||(g=(new URL(g,a.url)).href);return I(g,b.l,({result:k})=>{c=c.replace(f,`url(${k})`);return[f,k]})}));return Promise.all(e).then(()=>c)})}
+function V(a){if(a==null)return[];var b=[];a=a.replace(/(\/\*[\s\S]*?\*\/)/gi,"");for(var c=RegExp("((@.*?keyframes [\\s\\S]*?){([\\s\\S]*?}\\s*?)})","gi");;){var d=c.exec(a);if(d===null)break;b.push(d[0])}a=a.replace(c,"");c=/@import[\s\S]*?url\([^)]*\)[\s\S]*?;/gi;for(d=RegExp("((\\s*?(?:\\/\\*[\\s\\S]*?\\*\\/)?\\s*?@media[\\s\\S]*?){([\\s\\S]*?)}\\s*?})|(([\\s\\S]*?){([\\s\\S]*?)})","gi");;){let e=c.exec(a);if(e===null)if(e=d.exec(a),e===null)break;else c.lastIndex=d.lastIndex;else d.lastIndex=
+c.lastIndex;b.push(e[0])}return b}
+function sa(a,b){return t(function*(){var c=[],d=[];a.forEach(e=>{if("cssRules"in e)try{w(e.cssRules||[]).forEach((f,g)=>{if(f.type===CSSRule.IMPORT_RULE){let k=g+1;f=T(f.href).then(m=>U(m,b)).then(m=>V(m).forEach(q=>{try{e.insertRule(q,q.startsWith("@import")?k+=1:e.cssRules.length)}catch(Fa){}})).catch(()=>{});d.push(f)}})}catch(f){let g=a.find(k=>k.href==null)||document.styleSheets[0];e.href!=null&&d.push(T(e.href).then(k=>U(k,b)).then(k=>V(k).forEach(m=>{g.insertRule(m,g.cssRules.length)})).catch(()=>
+{}))}});return Promise.all(d).then(()=>{a.forEach(e=>{if("cssRules"in e)try{w(e.cssRules||[]).forEach(f=>{c.push(f)})}catch(f){}});return c})})}function ta(a){return a.filter(b=>b.type===CSSRule.FONT_FACE_RULE).filter(b=>b.style.getPropertyValue("src").search(O)!==-1)}function ua(a,b){return t(function*(){if(a.ownerDocument==null)throw Error("Provided element is not within a Document");var c=yield sa(w(a.ownerDocument.styleSheets),b);return ta(c)})}
+function va(a){function b(d){(d.style.fontFamily||getComputedStyle(d).fontFamily).split(",").forEach(e=>{c.add(e.trim().replace(/["']/g,""))});Array.from(d.children).forEach(e=>{e instanceof HTMLElement&&b(e)})}var c=new Set;b(a);return c}function wa(a,b){return t(function*(){var c=yield ua(a,b),d=va(a);return(yield Promise.all(c.filter(e=>d.has(e.style.fontFamily.trim().replace(/["']/g,""))).map(e=>P(e.cssText,e.parentStyleSheet?e.parentStyleSheet.href:null,b)))).join("\n")})}
+function xa(a,b){return t(function*(){var c=b.m!=null?b.m:b.A?null:yield wa(a,b);if(c){let d=document.createElement("style");d.appendChild(document.createTextNode(c));a.firstChild?a.insertBefore(d,a.firstChild):a.appendChild(d)}})};function ya(a,b={}){return t(function*(){var {width:c,height:d}=A(a,b),e=yield N(a,b,!0);yield xa(e,b);yield R(e,b);u(e,b);return yield D(e,c,d)})}
+function za(a,b={}){return t(function*(){var {width:c,height:d}=A(a,b),e=yield ya(a,b);e=yield B(e);var f=document.createElement("canvas"),g=f.getContext("2d"),k=b.I||window.devicePixelRatio||1,m=b.j||c,q=b.i||d;f.width=m*k;f.height=q*k;!b.L&&(f.width>16384||f.height>16384)&&(f.width>16384&&f.height>16384?f.width>f.height?(f.height*=16384/f.width,f.width=16384):(f.width*=16384/f.height,f.height=16384):f.width>16384?(f.height*=16384/f.width,f.width=16384):(f.width*=16384/f.height,f.height=16384));
+f.style.width=`${m}`;f.style.height=`${q}`;b.backgroundColor&&(g.fillStyle=b.backgroundColor,g.fillRect(0,0,f.width,f.height));g.drawImage(e,0,0,f.width,f.height);return f})}function Aa(a,b={}){return t(function*(){return(yield za(a,b)).toDataURL()})};const Ba=["gemini.google.com","corp.google.com","proxy.googlers.com"];function W(){return document.body.querySelectorAll('[class*="animate"]').length>0}function X(a,b){var c=document.createElement("canvas");c.width=a;c.height=b;return c.toDataURL("image/png")}const Y=X(1,1);
+function Z(a){return t(function*(){try{return yield Aa(a,{j:a.offsetWidth,i:a.offsetHeight,A:!0,filter:b=>{if(b.tagName==="IMG"){let c=b.getAttribute("src");if(!c||c.trim()===""||b.style.display==="none")return!1}return!0},o:Y,h:()=>Y})}catch(b){return X(a.offsetWidth,a.offsetHeight)}})}
+function Ca(){return t(function*(){var a=document.body.offsetWidth,b=document.body.offsetHeight,c=document.body.cloneNode(!0);c.querySelectorAll('[class*="animate"]').forEach(d=>{d.classList.remove(...Array.from(d.classList).filter(e=>e.startsWith("animate")))});c.style.width=`${a}px`;c.style.height=`${b}px`;return c})}
+function Da(a){return t(function*(){var b=document.body;if(W()){var c=yield Ca();b=c;document.body.appendChild(c)}c=yield Z(b);W()&&document.body.removeChild(b);window.parent.postMessage({type:"SEND_SCREENSHOT",image:c,topOffset:document.documentElement.scrollTop},a.origin)})}function Ea(a){return t(function*(){var b={type:"SEND_SCREENSHOT_FOR_DATA_VISUALIZATION",image:yield Z(document.body),topOffset:0};window.parent.postMessage(b,a.origin)})}
+window.addEventListener("message",a=>t(function*(){if(Ba.some(c=>a.origin.includes(c))){var b=a.data;b&&(b.type==="MAKE_SCREENSHOT"&&(yield Da(a)),b.type==="MAKE_SCREENSHOT_FOR_DATA_VISUALIZATION"&&(yield Ea(a)))}}));
+})();</script><script data-bard-client-injected="true">(function() {
+  // Ensure this script is executed only once
+  if (window.firebaseAuthBridgeScriptLoaded) {
+    return;
+  }
+  window.firebaseAuthBridgeScriptLoaded = true;
+
+  let nextTokenPromiseId = 0;
+
+  // Stores { resolve, reject } for ongoing token requests
+  const pendingTokenPromises = {};
+
+  // Listen for messages from the Host Application
+  window.addEventListener('message', function(event) {
+
+    const messageData = event.data;
+
+  if (messageData && messageData.type === 'RESOLVE_NEW_FIREBASE_TOKEN') {
+      const { success, token, error, promiseId } = messageData ?? {};
+      if (pendingTokenPromises[promiseId]) {
+        if (success) {
+          pendingTokenPromises[promiseId].resolve(token);
+        } else {
+          pendingTokenPromises[promiseId].reject(new Error(error || 'Token refresh failed from host.'));
+        }
+        delete pendingTokenPromises[promiseId];
+      }
+    }
+  });
+
+  // Expose a function for the Generated App to request a new Firebase token
+  window.requestNewFirebaseToken = function() {
+    const currentPromiseId = nextTokenPromiseId++;
+    const promise = new Promise((resolve, reject) => {
+      pendingTokenPromises[currentPromiseId] = { resolve, reject };
+    });
+    if (window.parent && window.parent !== window) {
+      window.parent.postMessage({
+        type: 'REQUEST_NEW_FIREBASE_TOKEN',
+        promiseId: currentPromiseId
+      }, '*');
+    } else {
+      pendingTokenPromises[currentPromiseId].reject(new Error('No parent window to request token from.'));
+      delete pendingTokenPromises[currentPromiseId];
+    }
+    return promise;
+  };
+})();</script><script data-bard-client-injected="true">
+let realOriginalGetUserMedia = null;
+if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+  realOriginalGetUserMedia = navigator.mediaDevices.getUserMedia.bind(navigator.mediaDevices);
+}
+
+(function() {
+  if (navigator.mediaDevices && navigator.mediaDevices.__proto__) {
+    try {
+      Object.defineProperty(navigator.mediaDevices.__proto__, 'getUserMedia', {
+        get: function() {
+          return undefined; // Or throw an error
+        },
+        configurable: false
+      });
+    } catch (error) {
+      console.error("Error defining prototype getter:", error);
+    }
+  }
+})();
+
+(function() {
+  const pendingMediaResolvers = {};
+  let nextMediaPromiseId = 0;
+
+  function requestMediaPermissions(constraints) {
+    const mediaPromiseId = nextMediaPromiseId++;
+    const promise = new Promise((resolve, reject) => {
+      pendingMediaResolvers[mediaPromiseId] = (granted) => {
+        delete pendingMediaResolvers[mediaPromiseId];
+        resolve(granted);
+      };
+    });
+
+    window.parent.postMessage({
+      type: 'requestMediaPermission',
+      constraints: constraints,
+      promiseId: mediaPromiseId,
+    }, '*');
+
+    return promise;
+  }
+
+  let originalGetUserMedia = realOriginalGetUserMedia;
+
+  function interceptGetUserMedia() {
+    if (navigator.mediaDevices) {
+      Object.defineProperty(navigator.mediaDevices, 'getUserMedia', {
+        value: function(constraints) {
+          return requestMediaPermissions(constraints).then((granted) => {
+            if (granted) {
+              if (originalGetUserMedia) {
+                return originalGetUserMedia(constraints);
+              } else {
+                throw new Error("Original getUserMedia not available.");
+              }
+            } else {
+              throw new DOMException('Permission denied', 'NotAllowedError');
+            }
+          });
+        },
+        writable: false,
+        configurable: false
+      });
+    }
+  }
+
+  interceptGetUserMedia();
+
+  const observer = new MutationObserver(function(mutationsList, observer) {
+    for (const mutation of mutationsList) {
+      if (mutation.type === 'reconfigured' && mutation.name === 'getUserMedia' && mutation.object === navigator.mediaDevices) {
+        interceptGetUserMedia();
+      } else if (mutation.type === 'attributes' && mutation.attributeName === 'getUserMedia' && mutation.target === navigator.mediaDevices) {
+        interceptGetUserMedia();
+      } else if (mutation.type === 'childList' && mutation.addedNodes) {
+        mutation.addedNodes.forEach(node => {
+          if (node === navigator.mediaDevices) {
+            interceptGetUserMedia();
+          }
+        });
+      }
+    }
+  });
+
+  function interceptSpeechRecognition() {
+    if (!window.SpeechRecognition && !window.webkitSpeechRecognition) {
+      return;
+    }
+
+    const OriginalSpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+
+    const SpeechRecognitionWrapper = function(...args) {
+      const recognizer = new OriginalSpeechRecognition(...args);
+      const originalStart = recognizer.start.bind(recognizer);
+
+      recognizer.start = function() {
+        requestMediaPermissions({ audio: true }).then(granted => {
+          if (granted) {
+            originalStart();
+          } else {
+            const errorEvent = new SpeechRecognitionErrorEvent('error');
+            errorEvent.error = 'not-allowed'; // This is the standard error for permission denial.
+            recognizer.dispatchEvent(errorEvent);
+          }
+        });
+      };
+
+      return recognizer;
+    };
+
+    SpeechRecognitionWrapper.prototype = OriginalSpeechRecognition.prototype;
+    SpeechRecognitionWrapper.prototype.constructor = SpeechRecognitionWrapper;
+
+    if (window.SpeechRecognition) {
+      window.SpeechRecognition = SpeechRecognitionWrapper;
+    }
+    if (window.webkitSpeechRecognition) {
+      window.webkitSpeechRecognition = SpeechRecognitionWrapper;
+    }
+  }
+
+  interceptSpeechRecognition();
+
+  window.addEventListener('message', function(event) {
+    if (event.data) {
+      if (event.data.type === 'resolveMediaPermission') {
+        const { promiseId, granted } = event.data;
+        if (pendingMediaResolvers[promiseId]) {
+          pendingMediaResolvers[promiseId](granted);
+        }
+      }
+    }
+  });
+
+})();</script><script ws-interception-config="{&quot;parentOrigin&quot;:&quot;https://gemini.google.com&quot;,&quot;proxiedDomains&quot;:[]}" data-bard-client-injected="true">(function(){'use strict';var u=typeof Object.defineProperties=="function"?Object.defineProperty:function(b,d,e){if(b==Array.prototype||b==Object.prototype)return b;b[d]=e.value;return b};function v(b){b=["object"==typeof globalThis&&globalThis,b,"object"==typeof window&&window,"object"==typeof self&&self,"object"==typeof global&&global];for(var d=0;d<b.length;++d){var e=b[d];if(e&&e.Math==Math)return e}throw Error("Cannot find global object");}var w=v(this);
+function y(b,d){if(d)a:{var e=w;b=b.split(".");for(var h=0;h<b.length-1;h++){var k=b[h];if(!(k in e))break a;e=e[k]}b=b[b.length-1];h=e[b];d=d(h);d!=h&&d!=null&&u(e,b,{configurable:!0,writable:!0,value:d})}}function z(b){function d(h){return b.next(h)}function e(h){return b.throw(h)}return new Promise(function(h,k){function m(n){n.done?h(n.value):Promise.resolve(n.value).then(d,e).then(m,k)}m(b.next())})}y("globalThis",function(b){return b||w});/*
+
+ Copyright The Closure Library Authors.
+ SPDX-License-Identifier: Apache-2.0
+*/
+function A(b,d){function e(){}e.prototype=d.prototype;b.j=d.prototype;b.prototype=new e;b.prototype.constructor=b;b.h=function(h,k,m){for(var n=Array(arguments.length-2),p=2;p<arguments.length;p++)n[p-2]=arguments[p];return d.prototype[k].apply(h,n)}};function B(b,d,e="*"){function h(a){if(typeof a==="string")return F.encode(a).buffer;if(a instanceof ArrayBuffer)return a.slice(0);if(ArrayBuffer.isView(a))return a.buffer.slice(a.byteOffset,a.byteOffset+a.byteLength);throw Error("Invalid data type");}function k(a){a=h(a);var f={type:"send",data:new Uint8Array(a)},g;(g=r)==null||g.postMessage(f,[a])}function m(){if(!r)throw Error("Data port not captured yet.");r.onmessage=a=>{if(a.data.type==="message"){a=new MessageEvent("message",{data:G.decode(a.data.data)});
+let f;(f=c.onmessage)==null||f.call(c,a);c.dispatchEvent(a)}}}function n(){if(!t)throw Error("Control port not captured yet.");t.onmessage=a=>{switch(a.data.type){case "open":l=1;var f=new Event("open"),g;(g=c.onopen)==null||g.call(c,f);c.dispatchEvent(f);q.forEach(H=>{k(H)});q=[];break;case "close":g=a.data;l=3;g=new CloseEvent("close",{code:g.code,reason:g.reason,wasClean:g.wasClean});(f=c.onclose)==null||f.call(c,g);c.dispatchEvent(g);break;case "error":l=3;f=new Event("error");let x;(x=c.onerror)==
+null||x.call(c,f);c.dispatchEvent(f)}}}function p(a){return z(function*(){var f=new MessageChannel;t=f.port1;var g=new MessageChannel;r=g.port1;n();m();window.parent.postMessage({type:"websocket_open",portOrdering:["control","data"],url:b,protocols:a||[],connectionId:I},e,[f.port2,g.port2])}())}var c=Reflect.construct(EventTarget,[],new.target);c.CONNECTING=0;c.OPEN=1;c.CLOSING=2;c.CLOSED=3;c.url=b;c.binaryType="arraybuffer";c.protocol="";c.i="";var l=0,t=null,r=null,q=[],F=new TextEncoder,G=new TextDecoder;
+c.onopen=null;c.onmessage=null;c.onclose=null;c.onerror=null;Object.defineProperty(c,"readyState",{get:()=>l,enumerable:!0,configurable:!0});Object.defineProperty(c,"bufferedAmount",{get:()=>{var a=0;q.forEach(f=>{a+=typeof f==="string"?f.length:f.byteLength});return a},enumerable:!0,configurable:!0});var I=function(){var a;return((a=globalThis.crypto)==null?0:a.randomUUID)?globalThis.crypto.randomUUID():"xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g,f=>{var g=Math.random()*16|0;return(f===
+"x"?g:g&3|8).toString(16)})}();c.send=a=>{if(l===1)a instanceof Blob?a.arrayBuffer().then(f=>{k(f)}):k(a);else if(l===0)if(typeof a==="string")q.push(a);else if(a instanceof ArrayBuffer||ArrayBuffer.isView(a))q.push(h(a));else throw Error("Sending Blob is not supported before the connection is open.");else console.debug("WebSocket send called in CLOSING or CLOSED state; ignored.")};c.close=(a=1E3,f="")=>{if(l!==2&&l!==3){l=2;a={type:"close",code:a,reason:f,wasClean:a===1E3};var g;(g=t)==null||g.postMessage(a)}};
+Promise.resolve().then(()=>p(d));return c}A(B,EventTarget);var C=document.currentScript,D=C==null?void 0:C.getAttribute("ws-interception-config");if(!D)throw Error("WebSocket Interceptor: Missing ws-interception-config attribute in the script tag.");var E=JSON.parse(D);if(!E.parentOrigin||typeof E.parentOrigin!=="string")throw Error("WebSocket Interceptor: Invalid parentOrigin in ws-interception-config");
+(function(b){var d=Object.getOwnPropertyDescriptor(window,"WebSocket");if(!d||d.writable||d.configurable)d=Object.assign(function(e,h){try{let k=(new URL(e)).hostname;if(b.proxiedDomains.some(m=>k===m||k.endsWith(`.${m}`)))return new B(e,h,b.parentOrigin)}catch(k){throw window.parent.postMessage({type:"websocket_blocked",url:e,reason:"blocked_invalid_url"},b.parentOrigin),new DOMException(`WebSocket connection to '${e}' is not allowed in Canvas.`,"SecurityError");}window.parent.postMessage({type:"websocket_blocked",
+url:e,reason:"blocked_domain_not_allowlisted"},b.parentOrigin);throw new DOMException(`WebSocket connection to '${e}' is not allowed in Canvas.`,"SecurityError");},{CONNECTING:0,OPEN:1,CLOSING:2,CLOSED:3}),Object.defineProperty(window,"WebSocket",{value:d,writable:!1,configurable:!1})})({proxiedDomains:E.proxiedDomains||[],parentOrigin:E.parentOrigin});}).call(this);
+</script><script data-bard-client-injected="true">((function(modelInformation) {
+  const originalFetch = window.fetch;
+  // TODO: b/421908508 - Move these out of the script and match all generative AI model calls.
+  let googleLlmBaseApiUrls = [
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.textModelName + ':streamGenerateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.textModelName + ':generateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageModelName + ':predict',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageModelName + ':predictLongRunning',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageEditModelName + ':generateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageTransformModelName + ':generateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.videoModelName + ':predict',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.videoModelName + ':predictLongRunning',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.ttsModelName + ':generateContent',
+  ];
+  modelInformation.deprecatedTextModelNames.forEach((modelName) => {
+    googleLlmBaseApiUrls.push(
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':streamGenerateContent',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':generateContent',
+    );
+  });
+  modelInformation.deprecatedImageModelNames.forEach((modelName) => {
+    googleLlmBaseApiUrls.push(
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':predict',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':predictLongRunning',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':generateContent',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':streamGenerateContent',
+    );
+  });
+  modelInformation.deprecatedGenerateImageModelNames.forEach((modelName) => {
+    googleLlmBaseApiUrls.push(
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':generateContent',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':streamGenerateContent',
+    );
+  });
+  modelInformation.deprecatedImageTransformModelNames.forEach((modelName) => {
+    googleLlmBaseApiUrls.push(
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':generateContent',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':streamGenerateContent',
+    );
+  });
+
+  const pendingFetchResolvers = {};
+  let nextPromiseId = 0;
+
+  function handleStringInput(input, optionsArgument) {
+    const actualUrl = input;
+    const fetchCallArgs = [actualUrl, optionsArgument];
+    const effectiveOptions = optionsArgument || {};
+    const bodyForApiKeyCheck = effectiveOptions.body;
+    const bodyForPostMessage = effectiveOptions.body;
+    return { actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage };
+  }
+
+  function handleRequestInput(input, optionsArgument) {
+    const actualUrl = input.url;
+    const fetchCallArgs = [input, optionsArgument];
+    const effectiveOptions = { method: input.method, headers: new Headers(input.headers) };
+    let bodyForApiKeyCheck;
+    let bodyForPostMessage;
+
+    if (optionsArgument) {
+      if (optionsArgument.method) effectiveOptions.method = optionsArgument.method;
+      if (optionsArgument.headers) effectiveOptions.headers = new Headers(optionsArgument.headers);
+      if ('body' in optionsArgument) {
+        bodyForApiKeyCheck = optionsArgument.body;
+        bodyForPostMessage = optionsArgument.body;
+      } else {
+        bodyForApiKeyCheck = undefined;
+        bodyForPostMessage = input.body;
+      }
+    } else {
+      bodyForApiKeyCheck = undefined;
+      bodyForPostMessage = input.body;
+    }
+    return { actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage };
+  }
+
+  window.fetch = function(input, optionsArgument) {
+    let actualUrl;
+    let fetchCallArgs;
+    let effectiveOptions = {};
+    let bodyForApiKeyCheck;
+    let bodyForPostMessage;
+
+    if (typeof input === 'string') {
+      ({actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage} = handleStringInput(input, optionsArgument));
+    } else if (input instanceof Request) {
+      ({actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage} = handleRequestInput(input, optionsArgument));
+    } else {
+      return originalFetch.apply(window, [input, optionsArgument]);
+    }
+
+    effectiveOptions.method = effectiveOptions.method || 'GET';
+    if (!effectiveOptions.headers) {
+      effectiveOptions.headers = new Headers();
+    }
+
+
+    if (typeof actualUrl === 'string' && googleLlmBaseApiUrls.some((url) => actualUrl.startsWith(url))) {
+      let apiKeyIsNull = true;
+
+      const regex = new RegExp("models/([^:]+)");
+      const modelNameMatch = actualUrl.match(regex);
+      const modelName = modelNameMatch ? modelNameMatch[1] : 'unspecified';
+
+
+      try {
+        const urlObject = new URL(actualUrl);  // Use URL object for robust parsing
+        const apiKeyParam = urlObject.searchParams.get('key');
+        if (apiKeyParam) {
+          apiKeyIsNull = false;
+        }
+      } catch (e) {
+        // Continue checks even if URL parsing fails
+      }
+
+      if (apiKeyIsNull && effectiveOptions.headers) {
+        const h = new Headers(effectiveOptions.headers);
+        const apiKeyHeaderValue = h.get('X-API-Key') || h.get('x-api-key');
+        if (apiKeyHeaderValue) {
+          apiKeyIsNull = false;
+          return originalFetch.apply(window, fetchCallArgs);
+        }
+      }
+
+      if (apiKeyIsNull && effectiveOptions.method && ['POST', 'PUT', 'PATCH'].includes(effectiveOptions.method.toUpperCase()) && typeof bodyForApiKeyCheck === 'string') {
+        try {
+          const bodyData = JSON.parse(bodyForApiKeyCheck);
+          if (bodyData && bodyData.apiKey) {
+            apiKeyIsNull = false;
+            return originalFetch.apply(window, fetchCallArgs);
+          }
+        } catch (e) {
+          // Ignore JSON parsing errors
+        }
+      }
+
+      if(apiKeyIsNull) {
+        const promiseId = nextPromiseId++;
+        const promise = new Promise((resolve) => {
+          pendingFetchResolvers[promiseId] = (resolvedResponse) => {
+            delete pendingFetchResolvers[promiseId];
+            resolve(resolvedResponse);
+          };
+        });
+
+        let serializedBodyForPostMessage;
+        if (typeof bodyForPostMessage === 'string' || bodyForPostMessage == null) {
+            serializedBodyForPostMessage = bodyForPostMessage;
+        } else if (bodyForPostMessage instanceof ReadableStream) {
+            serializedBodyForPostMessage = null;
+        } else {
+            try {
+                serializedBodyForPostMessage = JSON.stringify(bodyForPostMessage);
+            } catch (e) {
+                serializedBodyForPostMessage = null;
+            }
+        }
+
+        const messageOptions = {
+            method: effectiveOptions.method,
+            headers: Object.fromEntries(new Headers(effectiveOptions.headers).entries()),
+            body: serializedBodyForPostMessage
+        };
+
+        window.parent.postMessage({
+          type: 'requestFetch',
+          url: actualUrl,
+          modelName: modelName,
+          options: messageOptions,
+          promiseId: promiseId,
+        }, '*');
+
+        return promise;
+      }
+      return originalFetch.apply(window, fetchCallArgs);
+    }
+    return originalFetch.apply(window, fetchCallArgs);
+  };
+
+  window.addEventListener('message', function(event) {
+    if (event.data && event.data.type === 'resolveFetch') {
+      const { promiseId, response } = event.data;
+      if (pendingFetchResolvers[promiseId]) {
+        try {
+          const reconstructedResponse = new Response(response.body, {
+            status: response.status,
+            statusText: response.statusText,
+            headers: new Headers(response.headers),
+          });
+          pendingFetchResolvers[promiseId](reconstructedResponse);
+        } catch (error) {
+          pendingFetchResolvers[promiseId](new Response(null, { status: 500, statusText: "Interceptor Response Reconstruction Error" }));
+        }
+      }
+    }
+  });
+
+}))({"textModelName":"gemini-3-flash-preview","imageModelName":"imagen-4.0-generate-001","imageEditModelName":"gemini-3.1-flash-image","imageTransformModelName":"gemini-3-pro-image","videoModelName":"veo-2.0-generate-001","ttsModelName":"gemini-2.5-flash-preview-tts","deprecatedTextModelNames":["gemini-2.0-flash","gemini-2.5-flash","gemini-2.5-flash-preview-04-17","gemini-2.5-flash-preview-05-20","gemini-2.5-flash-preview-09-2025"],"deprecatedImageModelNames":["imagen-3.0-generate-001","imagen-3.0-generate-002"],"deprecatedGenerateImageModelNames":["gemini-2.5-flash-image-preview","gemini-2.5-flash-image","gemini-3.1-flash-image-preview"],"deprecatedImageTransformModelNames":["gemini-3-pro-image-preview-11-2025"]})</script><script data-bard-client-injected="true">(function(){'use strict';function a(){window.parent.postMessage({type:"interaction"},"*")}window.addEventListener("click",a,{capture:!0,passive:!0});window.addEventListener("touchstart",a,{capture:!0,passive:!0});window.addEventListener("keydown",a,{capture:!0,passive:!0});}).call(this);
+</script><script data-bard-client-injected="true">(function() {
+  const originalConsoleLog = console.log;
+  const originalConsoleError = console.error;
+
+    /**
+   * Normalizes an error event or a promise rejection reason into a structured error object.
+   * @param {*} errorEventOrReason The error object or reason.
+   * @return {object} Structured error data { message, name, stack }.
+   */
+  function getErrorObject(errorEventOrReason) {
+    if (errorEventOrReason instanceof Error) {
+      return {
+        message: errorEventOrReason.message,
+        name: errorEventOrReason.name,
+        stack: errorEventOrReason.stack,
+      };
+    }
+    // Fallback for non-Error objects.
+    try {
+      return {
+        message: JSON.stringify(errorEventOrReason),
+        name: 'UnknownErrorType',
+        stack: null,
+      };
+    } catch (e) {
+      return {
+        message: String(errorEventOrReason),
+        name: 'UnknownErrorTypeNonStringifiable',
+        stack: null,
+      };
+    }
+  }
+
+  /**
+   * Converts an array of arguments (from log/error) into a single string.
+   * Handles Error objects specially to include their message and stack.
+   * @param {Array<*>} args - Arguments passed to console methods.
+   * @return {string} A string representation of the arguments.
+   */
+  function stringifyArgs(args) {
+    return args
+      .map((arg) => {
+        if (arg instanceof Error) {
+          const {message, stack} = arg;
+          return `Error: ${message}${stack ? ('\nStack: ' + stack) : ''}`;
+        }
+        if (typeof arg === 'object' && arg !== null) {
+          try {
+            return JSON.stringify(arg);
+          } catch (error) {
+            return '[Circular Object]';
+          }
+        } else {
+          return String(arg);
+        }
+      })
+      .join(' ');
+  }
+
+  console.log = function(...args) {
+    const logString = stringifyArgs(args);
+    window.parent.postMessage({ type: 'log', message: logString }, '*');
+    originalConsoleLog.apply(console, args);
+  };
+
+  console.error = function(...args) {
+    let errorData;
+    if (args.length > 0 && args[0] instanceof Error) {
+      const err = args[0];
+      // If the first arg is an Error, capture its details.
+      errorData = {
+        type: 'error',
+        source: 'CONSOLE_ERROR',
+        ...getErrorObject(err),
+        rawArgsString: stringifyArgs(args.slice(1)),
+        timestamp: new Date().toISOString(),
+      };
+    } else {
+      // If not an Error object, treat all args as a general error message.
+      errorData = {
+        type: 'error',
+        source: 'CONSOLE_ERROR',
+        message: stringifyArgs(args),
+        name: 'ConsoleLoggedError',
+        stack: null,
+        timestamp: new Date().toISOString(),
+      };
+    }
+    window.parent.postMessage(errorData, '*');
+    originalConsoleError.apply(console, args);
+  };
+
+  // Listen for global unhandled synchronous errors.
+  window.addEventListener('error', function(event) {
+    const errorDetails = event.error ? getErrorObject(event.error) : {
+      message: event.message,
+      name: 'GlobalError',
+      stack: null,
+      filename: event.filename,
+      lineno: event.lineno,
+      colno: event.colno,
+    };
+
+    window.parent.postMessage({
+      type: 'error',
+      source: 'global',
+      ...errorDetails,
+      message: errorDetails.message || event.message,
+      timestamp: new Date().toISOString(),
+    }, '*');
+  });
+
+  // Listen for unhandled promise rejections (asynchronous errors).
+  window.addEventListener('unhandledrejection', function(event) {
+    const errorDetails = getErrorObject(event.reason);
+
+    window.parent.postMessage({
+      type: 'error',
+      source: 'unhandledrejection',
+      ...errorDetails,
+      message: errorDetails.message || 'Unhandled Promise Rejection',
+      timestamp: new Date().toISOString(),
+    }, '*');
+  });
+
+})();</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Jersey POS">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="theme-color" id="meta-theme-color" content="#111827">
+<meta name="description" content="Standalone Jersey Business POS, Size Inventory Matrix, Profit Analytics &amp; WhatsApp CRM">
+<title>Jersey Business App — Standalone POS, Inventory &amp; CRM</title>
+<link id="app-favicon" rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 120'%3E%3Crect width='120' height='120' rx='28' fill='%23e11d48'/%3E%3Cpath d='M36 28h16l8 10 8-10h16l16 18-12 14-8-6v38H40V54l-8 6-12-14z' fill='%23fff'/%3E%3Ctext x='60' y='78' font-family='Arial,sans-serif' font-weight='900' font-size='22' fill='%23e11d48' text-anchor='middle'%3E10%3C/text%3E%3C/svg%3E">
+<link id="apple-touch-icon" rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 120'%3E%3Crect width='120' height='120' rx='28' fill='%23e11d48'/%3E%3Cpath d='M36 28h16l8 10 8-10h16l16 18-12 14-8-6v38H40V54l-8 6-12-14z' fill='%23fff'/%3E%3Ctext x='60' y='78' font-family='Arial,sans-serif' font-weight='900' font-size='22' fill='%23e11d48' text-anchor='middle'%3E10%3C/text%3E%3C/svg%3E">
+<link id="app-manifest" rel="manifest" href="blob:https://4aauclnd57hov05gy5mckc9o1bvc29opiakj5gf1s3twnf7tlm-h998661601.scf.usercontent.goog/a4dcf1e2-0567-459e-815f-9078273172e4">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&amp;family=Barlow:wght@400;500;600;700&amp;display=swap">
+<style>
+  :root {
+    --bg: #f1f5f9;
+    --paper: #ffffff;
+    --ink: #0f172a;
+    --muted: #64748b;
+    --line: #e2e8f0;
+    --accent: #e11d48;
+    --accent-soft: #ffe4e6;
+    --good: #16a34a;
+    --good-soft: #dcfce7;
+    --warn: #d97706;
+    --warn-soft: #fef3c7;
+    --field: #f8fafc;
+    --btn: #0f172a;
+    --btntext: #ffffff;
+  }
+
+  :root[data-theme="dark"] {
+    --bg: #090d16;
+    --paper: #111827;
+    --ink: #f1f5f9;
+    --muted: #94a3b8;
+    --line: #1e293b;
+    --accent: #fb7185;
+    --accent-soft: rgba(251, 113, 133, 0.14);
+    --good: #4ade80;
+    --good-soft: rgba(74, 222, 128, 0.14);
+    --warn: #fbbf24;
+    --warn-soft: rgba(251, 191, 36, 0.14);
+    --field: #1e293b;
+    --btn: #f8fafc;
+    --btntext: #0f172a;
+  }
+
+  * { box-sizing: border-box; }
+  html {
+    scroll-padding-top: 80px;
+    font-family: "Barlow", system-ui, -apple-system, sans-serif;
+  }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-size: 15px;
+    line-height: 1.45;
+    transition: background-color 0.2s, color 0.2s;
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-bottom: calc(82px + env(safe-area-inset-bottom, 0px));
+    -webkit-tap-highlight-color: transparent;
+  }
+  @media (min-width: 768px) {
+    body {
+      padding-bottom: 48px;
+    }
+  }
+  h1, h2, h3, .font-condensed {
+    font-family: "Barlow Condensed", "Arial Narrow", sans-serif;
+    letter-spacing: 0.01em;
+  }
+
+  /* Standalone Mobile Bottom Dock */
+  .mobile-dock {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 40;
+    background: var(--paper);
+    border-top: 1px solid var(--line);
+    padding: 6px 6px calc(6px + env(safe-area-inset-bottom, 0px));
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 2px;
+    box-shadow: 0 -4px 20px rgba(15, 23, 42, 0.07);
+  }
+  @media (min-width: 768px) {
+    .mobile-dock { display: none; }
+  }
+  .dock-btn {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    padding: 6px 2px;
+    border-radius: 10px;
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--muted);
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    transition: all 0.15s;
+  }
+  .dock-btn .dock-ico {
+    font-size: 17px;
+    line-height: 1;
+  }
+  .dock-btn.on {
+    color: var(--accent);
+    background: var(--accent-soft);
+    font-weight: 700;
+  }
+  .dock-badge {
+    position: absolute;
+    top: 2px;
+    right: 6px;
+    font-size: 9px;
+    font-weight: 800;
+    padding: 0 4px;
+    border-radius: 99px;
+    background: var(--accent);
+    color: #fff;
+    line-height: 14px;
+    min-width: 14px;
+    text-align: center;
+  }
+
+  /* Status indicator dot */
+  .status-dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--good);
+    display: inline-block;
+    box-shadow: 0 0 0 3px var(--good-soft);
+  }
+
+  /* Custom inputs & controls */
+  input, textarea, select {
+    font: inherit;
+    color: var(--ink);
+    background: var(--field);
+    border: 1.5px solid var(--line);
+    border-radius: 8px;
+    padding: 8px 11px;
+    width: 100%;
+    min-width: 0;
+    transition: border-color 0.15s, box-shadow 0.15s, background 0.15s;
+  }
+  input:focus, textarea:focus, select:focus {
+    outline: none;
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px var(--accent-soft);
+  }
+  input::placeholder, textarea::placeholder {
+    color: var(--muted);
+    opacity: 0.7;
+  }
+
+  .card {
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 18px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
+  }
+
+  /* Invoice Paper Sheet */
+  .sheet {
+    background: var(--paper);
+    border-radius: 16px;
+    padding: 24px 22px;
+    border: 1.5px solid var(--line);
+    box-shadow: 0 8px 25px -5px rgba(15, 23, 42, 0.06);
+    position: relative;
+  }
+
+  /* Buttons */
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    font-weight: 600;
+    font-size: 14px;
+    border-radius: 9px;
+    padding: 9px 15px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    border: 1.5px solid transparent;
+    white-space: nowrap;
+    user-select: none;
+  }
+  .btn:active { transform: translateY(1px); }
+  .btn-primary {
+    background: var(--btn);
+    color: var(--btntext);
+  }
+  .btn-primary:hover { opacity: 0.92; }
+  .btn-accent {
+    background: var(--accent);
+    color: #fff;
+  }
+  .btn-accent:hover { filter: brightness(1.06); }
+  .btn-alt {
+    background: transparent;
+    color: var(--ink);
+    border-color: var(--line);
+  }
+  .btn-alt:hover { background: var(--field); }
+  .btn-wa {
+    background: #16a34a;
+    color: #ffffff;
+  }
+  .btn-wa:hover { background: #15803d; }
+  .btn-del {
+    background: transparent;
+    color: var(--accent);
+    border-color: var(--accent-soft);
+  }
+  .btn-del:hover { background: var(--accent-soft); }
+  .btn-sm {
+    padding: 6px 11px;
+    font-size: 13px;
+    border-radius: 7px;
+  }
+
+  /* Navigation Tabs */
+  .nav-tabs {
+    display: flex;
+    gap: 6px;
+    overflow-x: auto;
+    scrollbar-width: none;
+    padding-bottom: 2px;
+  }
+  .nav-tabs::-webkit-scrollbar { display: none; }
+  .tab-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    padding: 9px 15px;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--muted);
+    background: transparent;
+    border: 1.5px solid transparent;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: all 0.15s;
+  }
+  .tab-btn:hover {
+    color: var(--ink);
+    background: var(--field);
+  }
+  .tab-btn.on {
+    background: var(--btn);
+    color: var(--btntext);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+  }
+  .tab-badge {
+    font-size: 11px;
+    padding: 1px 6px;
+    border-radius: 99px;
+    background: rgba(148, 163, 184, 0.2);
+    color: inherit;
+    font-weight: 700;
+  }
+  .tab-btn.on .tab-badge {
+    background: rgba(255, 255, 255, 0.22);
+    color: var(--btntext);
+  }
+
+  /* Table Styles */
+  .tablewrap {
+    overflow-x: auto;
+    margin: 0 -4px;
+    padding: 0 4px;
+  }
+  table.inv-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 680px;
+  }
+  table.inv-table th {
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    text-align: left;
+    color: var(--muted);
+    border-bottom: 2px solid var(--ink);
+    padding: 9px 6px;
+  }
+  table.inv-table td {
+    padding: 8px 5px;
+    border-bottom: 1px solid var(--line);
+    vertical-align: top;
+  }
+  table.inv-table td.amt {
+    text-align: right;
+    white-space: nowrap;
+    font-weight: 700;
+    font-size: 15px;
+    padding-top: 15px;
+    padding-right: 8px;
+  }
+  table.inv-table th.r { text-align: right; }
+  .costcol {
+    background: var(--accent-soft);
+    border-radius: 6px;
+  }
+
+  /* Chips */
+  .chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 2px 10px;
+    border-radius: 99px;
+    font-size: 12px;
+    font-weight: 700;
+    border: 1px solid transparent;
+  }
+  .chip.paid {
+    color: var(--good);
+    background: var(--good-soft);
+    border-color: rgba(22, 163, 74, 0.25);
+  }
+  .chip.due {
+    color: var(--accent);
+    background: var(--accent-soft);
+    border-color: rgba(225, 29, 72, 0.25);
+  }
+  .chip.warn {
+    color: var(--warn);
+    background: var(--warn-soft);
+    border-color: rgba(217, 119, 6, 0.25);
+  }
+
+  /* Profit period bars */
+  .prow {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    gap: 14px;
+    padding: 10px 8px;
+    border-bottom: 1px solid var(--line);
+    font-size: 14px;
+    align-items: center;
+    overflow: hidden;
+  }
+  .prow i {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    background: var(--good);
+    border-radius: 2px;
+    transition: width 0.3s ease;
+  }
+  .prow i.n { background: var(--accent); }
+  .prow b { min-width: 85px; text-align: right; }
+
+  /* Toast Notification */
+  #toast {
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%) translateY(20px);
+    bottom: calc(84px + env(safe-area-inset-bottom, 0px));
+    background: var(--ink);
+    color: var(--paper);
+    padding: 11px 20px;
+    border-radius: 99px;
+    font-weight: 600;
+    font-size: 14px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s, transform 0.2s;
+    z-index: 1000;
+  }
+  @media (min-width: 768px) {
+    #toast {
+      bottom: 26px;
+    }
+  }
+  #toast.on {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+
+  .hide { display: none !important; }
+  .ptxt { display: none; }
+
+  /* Size stepper pill in Stock */
+  .sz-box {
+    background: var(--field);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 6px;
+    text-align: center;
+  }
+  .sz-box label {
+    display: block;
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--muted);
+    margin-bottom: 3px;
+  }
+  .sz-box input {
+    text-align: center;
+    font-weight: 700;
+    padding: 4px 2px;
+    border: 1px solid transparent;
+    background: var(--paper);
+  }
+  .sz-step {
+    display: flex;
+    justify-content: space-between;
+    gap: 3px;
+    margin-top: 4px;
+  }
+  .sz-step button {
+    flex: 1;
+    background: var(--paper);
+    border: 1px solid var(--line);
+    color: var(--ink);
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: 700;
+    padding: 2px 0;
+    cursor: pointer;
+  }
+  .sz-step button:hover {
+    background: var(--accent-soft);
+    color: var(--accent);
+  }
+
+  /* Print Stylesheet */
+  @media print {
+    :root, :root[data-theme="dark"] {
+      --bg: #fff !important;
+      --paper: #fff !important;
+      --ink: #0f172a !important;
+      --muted: #475569 !important;
+      --line: #cbd5e1 !important;
+      --accent: #e11d48 !important;
+      --field: transparent !important;
+    }
+    body { background: #fff !important; padding: 0 !important; color: #0f172a !important; }
+    .wrap { max-width: 100% !important; padding: 0 !important; margin: 0 !important; }
+    header, .nav-tabs, .mobile-dock, .bar, .note, .owner, .x, .noprint, #toast, .addrow, .i-pick, .i-desc, .i-size, #pay-modal, #app-modal {
+      display: none !important;
+    }
+    .ptxt { display: inline-block !important; font-weight: 600; }
+    .sheet {
+      border: 0 !important;
+      box-shadow: none !important;
+      padding: 0 !important;
+    }
+    input, textarea, select {
+      background: transparent !important;
+      border: 0 !important;
+      padding: 2px 0 !important;
+      box-shadow: none !important;
+    }
+    input::placeholder { color: transparent !important; }
+    .tablewrap { overflow: visible !important; }
+    table.inv-table { min-width: 100% !important; }
+    table.inv-table td.amt { padding-top: 8px !important; }
+  }
+</style>
+<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.pointer-events-none{pointer-events:none}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.sticky{position:sticky}.inset-0{inset:0px}.left-2\.5{left:0.625rem}.top-0{top:0px}.z-30{z-index:30}.z-50{z-index:50}.mx-auto{margin-left:auto;margin-right:auto}.my-5{margin-top:1.25rem;margin-bottom:1.25rem}.mb-1{margin-bottom:0.25rem}.mb-2{margin-bottom:0.5rem}.mb-3{margin-bottom:0.75rem}.mb-4{margin-bottom:1rem}.ml-1{margin-left:0.25rem}.mt-0\.5{margin-top:0.125rem}.mt-1{margin-top:0.25rem}.mt-3{margin-top:0.75rem}.mt-6{margin-top:1.5rem}.mt-1\.5{margin-top:0.375rem}.block{display:block}.flex{display:flex}.inline-flex{display:inline-flex}.grid{display:grid}.hidden{display:none}.h-11{height:2.75rem}.h-9{height:2.25rem}.max-h-\[90vh\]{max-height:90vh}.\!w-28{width:7rem !important}.w-11{width:2.75rem}.w-9{width:2.25rem}.w-full{width:100%}.min-w-0{min-width:0px}.max-w-\[960px\]{max-width:960px}.max-w-lg{max-width:32rem}.max-w-sm{max-width:24rem}.flex-1{flex:1 1 0%}.shrink-0{flex-shrink:0}.cursor-pointer{cursor:pointer}.select-none{-webkit-user-select:none;user-select:none}.list-inside{list-style-position:inside}.list-decimal{list-style-type:decimal}.grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr))}.grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.grid-cols-5{grid-template-columns:repeat(5, minmax(0, 1fr))}.grid-cols-\[auto_1fr\]{grid-template-columns:auto 1fr}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-start{align-items:flex-start}.items-center{align-items:center}.items-stretch{align-items:stretch}.justify-end{justify-content:flex-end}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-1\.5{gap:0.375rem}.gap-2{gap:0.5rem}.gap-2\.5{gap:0.625rem}.gap-3{gap:0.75rem}.gap-4{gap:1rem}.gap-6{gap:1.5rem}.gap-x-3{column-gap:0.75rem}.gap-y-1\.5{row-gap:0.375rem}.space-y-0\.5 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.125rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.125rem * var(--tw-space-y-reverse))}.space-y-1 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.25rem * var(--tw-space-y-reverse))}.space-y-1\.5 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.375rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.375rem * var(--tw-space-y-reverse))}.space-y-2 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.5rem * var(--tw-space-y-reverse))}.space-y-2\.5 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.625rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.625rem * var(--tw-space-y-reverse))}.space-y-3 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.75rem * var(--tw-space-y-reverse))}.space-y-4 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1rem * var(--tw-space-y-reverse))}.overflow-y-auto{overflow-y:auto}.truncate{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.rounded{border-radius:0.25rem}.rounded-2xl{border-radius:1rem}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:0.5rem}.rounded-xl{border-radius:0.75rem}.\!border-0{border-width:0px !important}.border{border-width:1px}.border-2{border-width:2px}.border-b{border-bottom-width:1px}.border-b-\[3px\]{border-bottom-width:3px}.border-t{border-top-width:1px}.border-t-2{border-top-width:2px}.border-dashed{border-style:dashed}.\!border-transparent{border-color:transparent !important}.border-\[var\(--accent\)\]{border-color:var(--accent)}.border-\[var\(--ink\)\]{border-color:var(--ink)}.border-\[var\(--line\)\]{border-color:var(--line)}.\!bg-transparent{background-color:transparent !important}.bg-\[var\(--accent\)\]{background-color:var(--accent)}.bg-\[var\(--accent-soft\)\]{background-color:var(--accent-soft)}.bg-\[var\(--field\)\]{background-color:var(--field)}.bg-\[var\(--good-soft\)\]{background-color:var(--good-soft)}.bg-\[var\(--paper\)\]{background-color:var(--paper)}.bg-black\/50{background-color:rgb(0 0 0 / 0.5)}.\!p-3{padding:0.75rem !important}.p-1{padding:0.25rem}.p-3{padding:0.75rem}.p-3\.5{padding:0.875rem}.p-4{padding:1rem}.\!px-1{padding-left:0.25rem !important;padding-right:0.25rem !important}.\!px-1\.5{padding-left:0.375rem !important;padding-right:0.375rem !important}.\!px-2{padding-left:0.5rem !important;padding-right:0.5rem !important}.\!px-2\.5{padding-left:0.625rem !important;padding-right:0.625rem !important}.\!py-0\.5{padding-top:0.125rem !important;padding-bottom:0.125rem !important}.\!py-1{padding-top:0.25rem !important;padding-bottom:0.25rem !important}.px-1\.5{padding-left:0.375rem;padding-right:0.375rem}.px-2{padding-left:0.5rem;padding-right:0.5rem}.px-3{padding-left:0.75rem;padding-right:0.75rem}.py-0\.5{padding-top:0.125rem;padding-bottom:0.125rem}.py-1{padding-top:0.25rem;padding-bottom:0.25rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.py-2\.5{padding-top:0.625rem;padding-bottom:0.625rem}.\!pl-7{padding-left:1.75rem !important}.pb-2{padding-bottom:0.5rem}.pb-5{padding-bottom:1.25rem}.pt-1{padding-top:0.25rem}.pt-2{padding-top:0.5rem}.pt-2\.5{padding-top:0.625rem}.pt-3{padding-top:0.75rem}.pt-4{padding-top:1rem}.pt-5{padding-top:1.25rem}.text-center{text-align:center}.text-right{text-align:right}.font-mono{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace}.text-2xl{font-size:1.5rem;line-height:2rem}.text-4xl{font-size:2.25rem;line-height:2.5rem}.text-\[10px\]{font-size:10px}.text-\[11px\]{font-size:11px}.text-base{font-size:1rem;line-height:1.5rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:0.75rem;line-height:1rem}.font-bold{font-weight:700}.font-extrabold{font-weight:800}.font-medium{font-weight:500}.font-normal{font-weight:400}.font-semibold{font-weight:600}.uppercase{text-transform:uppercase}.leading-none{line-height:1}.leading-tight{line-height:1.25}.tracking-tight{letter-spacing:-0.025em}.tracking-wide{letter-spacing:0.025em}.tracking-wider{letter-spacing:0.05em}.text-\[var\(--accent\)\]{color:var(--accent)}.text-\[var\(--good\)\]{color:var(--good)}.text-\[var\(--ink\)\]{color:var(--ink)}.text-\[var\(--muted\)\]{color:var(--muted)}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.shadow-sm{--tw-shadow:0 1px 2px 0 rgb(0 0 0 / 0.05);--tw-shadow-colored:0 1px 2px 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.backdrop-blur-md{--tw-backdrop-blur:blur(12px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.hover\:\!border-\[var\(--line\)\]:hover{border-color:var(--line) !important}.hover\:text-\[var\(--accent\)\]:hover{color:var(--accent)}.hover\:underline:hover{-webkit-text-decoration-line:underline;text-decoration-line:underline}.focus\:\!bg-\[var\(--field\)\]:focus{background-color:var(--field) !important}@media (min-width: 640px){.sm\:col-span-2{grid-column:span 2 / span 2}.sm\:inline{display:inline}.sm\:w-72{width:18rem}.sm\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.sm\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.sm\:grid-cols-4{grid-template-columns:repeat(4, minmax(0, 1fr))}.sm\:flex-row{flex-direction:row}.sm\:items-center{align-items:center}.sm\:gap-2{gap:0.5rem}.sm\:px-5{padding-left:1.25rem;padding-right:1.25rem}.sm\:text-3xl{font-size:1.875rem;line-height:2.25rem}.sm\:text-xl{font-size:1.25rem;line-height:1.75rem}}@media (min-width: 768px){.md\:col-span-5{grid-column:span 5 / span 5}.md\:col-span-6{grid-column:span 6 / span 6}.md\:col-span-7{grid-column:span 7 / span 7}.md\:ml-auto{margin-left:auto}.md\:block{display:block}.md\:inline{display:inline}.md\:w-72{width:18rem}.md\:grid-cols-12{grid-template-columns:repeat(12, minmax(0, 1fr))}.md\:flex-row{flex-direction:row}.md\:justify-end{justify-content:flex-end}}</style></head>
+<body>
+
+<!-- Top Header Bar -->
+<header class="sticky top-0 z-30 border-b border-[var(--line)] bg-[var(--paper)]/95 backdrop-blur-md noprint">
+  <div class="max-w-[960px] mx-auto px-3 sm:px-5 py-2.5 flex items-center justify-between gap-2">
+    <div class="flex items-center gap-2.5 min-w-0">
+      <div class="w-9 h-9 shrink-0 rounded-xl bg-[var(--accent)] text-white flex items-center justify-center font-condensed font-extrabold text-xl shadow-sm">
+        ⚽
+      </div>
+      <div class="min-w-0">
+        <div class="flex items-center gap-2">
+          <span id="hdr-bname" class="font-condensed font-bold text-lg sm:text-xl tracking-wide leading-none truncate">JERSEY STUDIO POS</span>
+          <span class="text-[10px] font-bold uppercase px-2 py-0.5 rounded-full bg-[var(--accent-soft)] text-[var(--accent)] shrink-0">APP</span>
+        </div>
+        <div class="flex items-center gap-2 mt-0.5 text-[11px] text-[var(--muted)]">
+          <span class="inline-flex items-center gap-1.5 font-medium text-[var(--ink)]">
+            <i class="status-dot"></i>
+            <span id="save-status">Offline Ready · Auto-saved</span>
+          </span>
+          <span class="hidden sm:inline">· Standalone POS &amp; Inventory</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex items-center gap-1.5 shrink-0">
+      <button id="install-open-btn" class="btn btn-primary btn-sm" title="Install as Standalone App or Download Offline Copy">
+        <span>📲</span>
+        <span class="hidden sm:inline">Install App</span>
+      </button>
+      <button id="demo-btn" class="btn btn-alt btn-sm" title="Load sample jerseys, invoices &amp; expenses">
+        <span>✨</span>
+        <span class="hidden md:inline">Demo Data</span>
+      </button>
+      <button id="theme-btn" class="btn btn-alt btn-sm !px-2.5" aria-label="Toggle color theme" title="Toggle Dark / Light Mode">
+        <span id="theme-icon">☀️</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Desktop / Tablet Navigation Tabs -->
+  <div class="hidden md:block max-w-[960px] mx-auto px-3 sm:px-5 pb-2">
+    <nav class="nav-tabs" role="tablist">
+      <button data-t="invoice" class="tab-btn on">
+        <span>🧾 Invoice</span>
+      </button>
+      <button data-t="list" class="tab-btn">
+        <span>📁 Saved</span>
+        <span id="badge-inv" class="tab-badge">0</span>
+      </button>
+      <button data-t="stock" class="tab-btn">
+        <span>👕 Stock</span>
+        <span id="badge-stock" class="tab-badge">0</span>
+      </button>
+      <button data-t="dash" class="tab-btn">
+        <span>📈 Profit</span>
+      </button>
+      <button data-t="exp" class="tab-btn">
+        <span>💸 Expenses</span>
+      </button>
+      <button data-t="cust" class="tab-btn">
+        <span>👥 Customers</span>
+        <span id="badge-cust" class="tab-badge">0</span>
+      </button>
+    </nav>
+  </div>
+</header>
+
+<!-- Standalone Mobile Bottom Navigation Dock -->
+<nav class="mobile-dock noprint" aria-label="Mobile Navigation">
+  <button data-t="invoice" class="dock-btn on">
+    <span class="dock-ico">🧾</span>
+    <span>Invoice</span>
+  </button>
+  <button data-t="list" class="dock-btn">
+    <span class="dock-ico">📁</span>
+    <span>Saved</span>
+    <span id="mbadge-inv" class="dock-badge">0</span>
+  </button>
+  <button data-t="stock" class="dock-btn">
+    <span class="dock-ico">👕</span>
+    <span>Stock</span>
+    <span id="mbadge-stock" class="dock-badge">0</span>
+  </button>
+  <button data-t="dash" class="dock-btn">
+    <span class="dock-ico">📈</span>
+    <span>Profit</span>
+  </button>
+  <button data-t="exp" class="dock-btn">
+    <span class="dock-ico">💸</span>
+    <span>Expenses</span>
+  </button>
+  <button data-t="cust" class="dock-btn">
+    <span class="dock-ico">👥</span>
+    <span>CRM</span>
+    <span id="mbadge-cust" class="dock-badge">0</span>
+  </button>
+</nav>
+
+<main class="wrap max-w-[960px] mx-auto px-3 sm:px-5 pt-4">
+
+  <!-- ==================== 1. INVOICE TAB ==================== -->
+  <section id="t-invoice">
+    <!-- Action Toolbar -->
+    <div class="bar flex flex-wrap items-center justify-between gap-2 mb-4">
+      <div class="flex flex-wrap items-center gap-1.5 sm:gap-2">
+        <button id="save" class="btn btn-accent">
+          <span>💾 Save Invoice</span>
+        </button>
+        <button id="wa" class="btn btn-wa">
+          <span>💬 WhatsApp</span>
+        </button>
+        <button id="share-bill" class="btn btn-alt" title="Share bill via native phone share sheet">
+          <span>📤 Share</span>
+        </button>
+        <button id="sms" class="btn btn-alt">
+          <span>📱 SMS</span>
+        </button>
+        <button id="print" class="btn btn-alt">
+          <span>🖨️ PDF / Print</span>
+        </button>
+      </div>
+      <div class="flex items-center gap-2">
+        <span id="edit-indicator" class="hide chip warn">Editing Saved Invoice</span>
+        <button id="new" class="btn btn-alt">
+          <span>+ New Blank</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Printable Invoice Sheet -->
+    <div class="sheet">
+      <!-- Top Header: Business Info & Invoice Meta -->
+      <div class="flex flex-col md:flex-row justify-between gap-6 border-b-[3px] border-[var(--accent)] pb-5">
+        <div class="biz flex-1 space-y-1.5">
+          <input class="font-condensed font-bold text-2xl sm:text-3xl !bg-transparent !border-transparent hover:!border-[var(--line)] focus:!bg-[var(--field)] !px-1.5 !py-0.5" id="bname" placeholder="Your Jersey Business Name" aria-label="Business name">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-1.5">
+            <input id="bphone" placeholder="📞 Business Phone / WhatsApp" aria-label="Business phone" class="text-sm">
+            <div class="relative flex items-center">
+              <span class="absolute left-2.5 text-xs pointer-events-none select-none" aria-hidden="true">📸</span>
+              <input id="binsta" placeholder="Instagram ID (e.g. @your_jersey_store)" aria-label="Business Instagram ID" class="text-sm !pl-7 font-medium">
+            </div>
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-1.5">
+            <input id="bupi" placeholder="💳 UPI ID (e.g. shop@okaxis)" aria-label="UPI ID" class="text-sm">
+            <input id="baddr" placeholder="📍 Shop Address / City" aria-label="Business address" class="text-sm">
+          </div>
+        </div>
+
+        <div class="md:w-72 flex flex-col justify-between">
+          <div class="flex md:justify-end items-center justify-between mb-2">
+            <h1 class="text-4xl font-extrabold tracking-tight text-[var(--accent)]">INVOICE</h1>
+          </div>
+          <div class="grid grid-cols-[auto_1fr] gap-x-3 gap-y-1.5 items-center text-sm">
+            <label for="invno" class="text-[var(--muted)] font-medium">Invoice No.</label>
+            <input id="invno" class="font-bold py-1">
+            <label for="date" class="text-[var(--muted)] font-medium">Order Date</label>
+            <input id="date" type="date" class="py-1">
+            <label for="due" class="text-[var(--muted)] font-medium">Delivery Date</label>
+            <input id="due" type="date" class="py-1">
+          </div>
+        </div>
+      </div>
+
+      <!-- Bill To Customer Section -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 my-5 p-3.5 rounded-xl bg-[var(--field)] border border-[var(--line)]">
+        <div>
+          <label class="block text-xs font-bold uppercase tracking-wider text-[var(--muted)] mb-1" for="cname">Customer / Team Name</label>
+          <input id="cname" list="cust-dl" placeholder="e.g. Thunder FC or Rahul" autocomplete="off">
+          <datalist id="cust-dl"></datalist>
+        </div>
+        <div>
+          <label class="block text-xs font-bold uppercase tracking-wider text-[var(--muted)] mb-1" for="cphone">Customer WhatsApp Number</label>
+          <input id="cphone" type="tel" inputmode="tel" placeholder="10-digit mobile number">
+        </div>
+      </div>
+
+      <!-- Items Table -->
+      <div class="tablewrap">
+        <table class="inv-table">
+          <thead>
+            <tr>
+              <th style="width:36%">Jersey / Kit Item</th>
+              <th style="width:13%">Size</th>
+              <th style="width:11%">Qty</th>
+              <th class="r" style="width:14%">Rate (₹)</th>
+              <th class="r" style="width:13%">Amount</th>
+              <th class="noprint costcol text-center" style="width:13%" title="Hidden from customer print &amp; messages">Your Cost (₹)</th>
+              <th class="noprint" style="width:36px"></th>
+            </tr>
+          </thead>
+          <tbody id="rows"><tr><td class="c-j"><select class="i-pick" aria-label="Pick jersey"><option value="">Pick jersey from stock…</option><option value="_o">✍️ Custom / Other item (type manually)</option></select><input class="i-desc hide mt-1.5" placeholder="Type custom jersey / printing name" aria-label="Jersey name"><div class="i-info noprint text-[11px] text-[var(--muted)] mt-1"></div><span class="ptxt p-desc">Jersey</span></td><td class="c-s"><select class="i-size" aria-label="Size"><option value="">Size</option><option value="S">S</option><option value="M">M</option><option value="L">L</option><option value="XL">XL</option><option value="XXL">XXL</option></select><span class="ptxt p-size">-</span></td><td><input class="i-qty text-center font-semibold" type="number" inputmode="numeric" min="0" placeholder="1" aria-label="Quantity"></td><td><input class="i-rate text-right" type="number" inputmode="decimal" min="0" placeholder="0" aria-label="Rate"></td><td class="amt">₹0</td><td class="noprint costcol"><input class="i-cost text-right !bg-transparent" type="number" inputmode="decimal" min="0" placeholder="0" aria-label="Your cost each"></td><td class="noprint text-center"><button type="button" class="x text-[var(--muted)] hover:text-[var(--accent)] font-bold text-lg px-2 py-1" aria-label="Remove item">×</button></td></tr></tbody>
+        </table>
+      </div>
+
+      <div class="mt-3 flex flex-wrap items-center justify-between gap-2 noprint">
+        <button class="btn btn-alt btn-sm addrow" id="addrow">+ Add Jersey / Line Item</button>
+        <span class="text-xs text-[var(--muted)]">Tip: Selecting from Stock auto-fills price &amp; deducts size inventory on save.</span>
+      </div>
+
+      <!-- Bottom Notes & Totals Grid -->
+      <div class="mt-6 grid grid-cols-1 md:grid-cols-12 gap-6 items-start border-t border-[var(--line)] pt-5">
+        <!-- Left: Notes & UPI Payment Preview -->
+        <div class="md:col-span-6 space-y-3">
+          <div>
+            <label class="block text-xs font-bold uppercase tracking-wider text-[var(--muted)] mb-1" for="notes">Order Notes / Custom Name &amp; Number Print Details</label>
+            <textarea id="notes" rows="3" placeholder="e.g. Custom Name: RONALDO #7 (L). Custom printed jerseys are non-returnable."></textarea>
+          </div>
+
+          <div id="upi-box" class="hide p-3 rounded-xl border border-dashed border-[var(--line)] bg-[var(--field)] flex items-center justify-between gap-3">
+            <div class="text-xs space-y-0.5">
+              <div class="font-bold text-[var(--ink)] uppercase tracking-wider">Pay Balance via UPI</div>
+              <div id="upi-id-txt" class="text-[var(--muted)] font-medium"></div>
+              <div id="upi-amt-txt" class="text-[var(--accent)] font-bold"></div>
+            </div>
+            <a id="upi-pay-link" href="#" class="btn btn-alt btn-sm noprint">Open UPI App</a>
+          </div>
+        </div>
+
+        <!-- Right: Financial Totals -->
+        <div class="md:col-span-6 md:ml-auto w-full max-w-sm space-y-2">
+          <div class="flex justify-between items-center text-sm py-1">
+            <span class="text-[var(--muted)] font-medium">Total Quantity</span>
+            <span id="tot-qty" class="font-semibold">0 pcs</span>
+          </div>
+          <div class="flex justify-between items-center text-sm py-1">
+            <span class="text-[var(--muted)] font-medium">Subtotal</span>
+            <span id="sub" class="font-semibold">₹0</span>
+          </div>
+          <div class="flex justify-between items-center text-sm py-1 gap-4">
+            <label for="disc" class="text-[var(--muted)] font-medium">Discount (₹)</label>
+            <input id="disc" type="number" inputmode="decimal" min="0" placeholder="0" class="!w-28 text-right py-1">
+          </div>
+          <div class="flex justify-between items-center border-t-2 border-[var(--ink)] pt-2.5 mt-1 font-condensed text-2xl font-bold">
+            <span>Grand Total</span>
+            <span id="total">₹0</span>
+          </div>
+          <div class="flex justify-between items-center text-sm py-1 gap-4">
+            <label for="adv" class="text-[var(--muted)] font-medium">Advance Paid (₹)</label>
+            <div class="flex items-center gap-1.5">
+              <button type="button" id="full-paid-btn" class="btn btn-alt !px-2 !py-1 text-[11px] noprint" title="Set advance equal to total">Full</button>
+              <input id="adv" type="number" inputmode="decimal" min="0" placeholder="0" class="!w-28 text-right py-1">
+            </div>
+          </div>
+          <div class="flex justify-between items-center text-base font-bold text-[var(--accent)] bg-[var(--accent-soft)] px-3 py-2 rounded-lg">
+            <span>Balance Due</span>
+            <span id="bal">₹0</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center text-[var(--muted)] mt-6 pt-3 border-t border-dashed border-[var(--line)] text-xs font-medium space-y-1">
+        <div>Thank you for shopping with us! Wear your jersey with pride ⚽</div>
+        <div id="inv-insta-footer" class="font-semibold text-[var(--ink)]">
+          📸 Follow us on Instagram: <a id="inv-insta-link" href="https://instagram.com/jerseyhub.official" target="_blank" rel="noopener noreferrer" class="text-[var(--accent)] hover:underline"><span id="inv-insta-handle">@jerseyhub.official</span></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Owner Profit Strip (Never Printed) -->
+    <div class="owner noprint mt-3 p-3.5 rounded-xl bg-[var(--paper)] border border-[var(--line)] flex flex-wrap items-center justify-between gap-2 text-sm">
+      <div>
+        🔒 <b>Owner View Only:</b> Estimated profit on this invoice is <b id="ip" class="text-base text-[var(--good)]" style="color: var(--good);">₹0</b>
+        <span id="imargin" class="text-xs text-[var(--muted)] ml-1">(0% margin)</span>
+      </div>
+      <span class="text-xs text-[var(--muted)]">The "Your Cost" column and this box are strictly hidden on Print &amp; WhatsApp.</span>
+    </div>
+  </section>
+
+  <!-- ==================== 2. SAVED INVOICES TAB ==================== -->
+  <section id="t-list" class="hide space-y-4">
+    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+      <div>
+        <h2 class="text-2xl font-bold">Saved Invoices</h2>
+        <p class="text-xs text-[var(--muted)]">Track customer orders, pending balances, and delivery dates</p>
+      </div>
+      <div class="flex items-center gap-2">
+        <button class="btn btn-accent btn-sm" id="list-new-btn">+ Create Invoice</button>
+      </div>
+    </div>
+
+    <!-- Summary KPI Bar -->
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5" id="inv-summary"></div>
+
+    <!-- Search & Status Filter Bar -->
+    <div class="card !p-3 flex flex-col sm:flex-row gap-2.5 items-stretch sm:items-center">
+      <div class="flex-1">
+        <input id="inv-search" placeholder="🔍 Search invoice no, customer name, or phone..." aria-label="Search invoices">
+      </div>
+      <div class="flex gap-1.5" id="inv-filter-btns">
+        <button data-f="all" class="btn btn-primary btn-sm">All</button>
+        <button data-f="due" class="btn btn-alt btn-sm">Balance Due</button>
+        <button data-f="paid" class="btn btn-alt btn-sm">Paid</button>
+      </div>
+    </div>
+
+    <div class="grid gap-3" id="invlist"></div>
+  </section>
+
+  <!-- ==================== 3. STOCK INVENTORY TAB ==================== -->
+  <section id="t-stock" class="hide space-y-4">
+    <!-- Add Jersey Card -->
+    <div class="card">
+      <div class="flex items-center justify-between mb-3">
+        <h2 class="text-2xl font-bold">Add Jersey to Inventory</h2>
+        <span class="text-xs text-[var(--muted)]">Supports S, M, L, XL, XXL size tracking</span>
+      </div>
+        <div class=" sm:col-span-2">
+          <label class="block text-xs font-semibold text-[var(--muted)] mb-1" for="iname">Jersey / Club / Country Name *</label>
+          <input id="iname" placeholder="e.g. Real Madrid Home 24/25">
+        </div>
+        <div>
+          <label class="block text-xs font-semibold text-[var(--muted)] mb-1" for="iver">Edition / Version</label>
+          <select id="iver">
+            <option>Fan version</option>
+            <option>Player version</option>
+            <option>Retro</option>
+            <option>Kids</option>
+            <option>Custom Teamwear</option>
+            <option>Master copy</option>
+            <option>Training / Jacket</option>
+          </select>
+        </div>
+        <div>
+          <label class="block text-xs font-semibold text-[var(--muted)] mb-1" for="ilow">Low-Stock Alert At</label>
+          <input id="ilow" type="number" inputmode="numeric" min="0" placeholder="5">
+        </div>
+        <div>
+          <label class="block text-xs font-semibold text-[var(--muted)] mb-1" for="iprice">Selling Price (₹)</label>
+          <input id="iprice" type="number" inputmode="decimal" min="0" placeholder="799">
+        </div>
+        <div>
+          <label class="block text-xs font-semibold text-[var(--muted)] mb-1" for="icost">Your Cost Price (₹)</label>
+          <input id="icost" type="number" inputmode="decimal" min="0" placeholder="420">
+        </div>
+        <div class="sm:col-span-2">
+          <span class="block text-xs font-semibold text-[var(--muted)] mb-1">Initial Stock by Size</span>
+          <div class="grid grid-cols-5 gap-1.5">
+            <input id="is-S" type="number" inputmode="numeric" min="0" placeholder="S" aria-label="Stock S" class="text-center !px-1">
+            <input id="is-M" type="number" inputmode="numeric" min="0" placeholder="M" aria-label="Stock M" class="text-center !px-1">
+            <input id="is-L" type="number" inputmode="numeric" min="0" placeholder="L" aria-label="Stock L" class="text-center !px-1">
+            <input id="is-XL" type="number" inputmode="numeric" min="0" placeholder="XL" aria-label="Stock XL" class="text-center !px-1">
+            <input id="is-XXL" type="number" inputmode="numeric" min="0" placeholder="XXL" aria-label="Stock XXL" class="text-center !px-1">
+          </div>
+        </div>
+      </div>
+      <button id="iadd" class="btn btn-accent">+ Add Jersey to Stock</button>
+    
+
+    <!-- Stock KPI Summary -->
+    <div id="stock-summary" class="grid grid-cols-2 sm:grid-cols-4 gap-2.5"></div>
+
+    <!-- Search & Filter Stock -->
+    <div class="card !p-3 flex flex-col sm:flex-row gap-2.5 items-stretch sm:items-center justify-between">
+      <input id="stock-search" placeholder="🔍 Search jersey name or version..." class="flex-1">
+      <div class="flex gap-1.5 flex-wrap" id="stock-filter-btns">
+        <button data-sf="all" class="btn btn-primary btn-sm">All</button>
+        <button data-sf="low" class="btn btn-alt btn-sm">Low / Out</button>
+        <button data-sf="in" class="btn btn-alt btn-sm">In Stock</button>
+      </div>
+    </div>
+
+    <div class="grid gap-3" id="stocklist"></div>
+    <datalist id="itemlist"></datalist>
+  </section>
+
+  <!-- ==================== 4. PROFIT & ANALYTICS TAB ==================== -->
+  <section id="t-dash" class="hide space-y-4">
+    <div class="flex flex-wrap items-center justify-between gap-2">
+      <div>
+        <h2 class="text-2xl font-bold">Profit &amp; Performance</h2>
+        <p class="text-xs text-[var(--muted)]">Net Profit = Invoice Sales − Jersey Cost (COGS) − Shop Expenses</p>
+      </div>
+      <div class="flex gap-1.5 bg-[var(--paper)] p-1 rounded-xl border border-[var(--line)]">
+        <button id="pw" class="btn btn-primary btn-sm">Weekly</button>
+        <button id="pm" class="btn btn-alt btn-sm !border-0">Monthly</button>
+      </div>
+    </div>
+
+    <!-- 4 KPI Stat Cards -->
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-3" id="stats"></div>
+
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-4">
+      <!-- Period Breakdown -->
+      <div class="card md:col-span-7">
+        <h2 id="phead" class="text-xl font-bold mb-2">Last 8 Weeks</h2>
+        <div id="periods"></div>
+      </div>
+
+      <!-- Top Sellers -->
+      <div class="card md:col-span-5">
+        <h2 class="text-xl font-bold mb-2">🏆 Top Selling Jerseys (This Period)</h2>
+        <div id="top"></div>
+      </div>
+    </div>
+
+    <!-- Backup & Restore Card -->
+    <div class="card space-y-3">
+      <div class="flex flex-wrap items-center justify-between gap-2">
+        <div>
+          <h2 class="text-xl font-bold">☁️ Device Backup &amp; Data Transfer</h2>
+          <p class="text-xs text-[var(--muted)]">All data stays safely on your device. Download a backup file or copy the JSON text to WhatsApp/Notes.</p>
+        </div>
+        <div class="flex flex-wrap gap-2">
+          <button id="bkdl" class="btn btn-primary btn-sm">⬇️ Download .JSON</button>
+          <label class="btn btn-alt btn-sm cursor-pointer">
+            <span>⬆️ Upload .JSON</span>
+            <input id="bkfile" type="file" accept=".json,application/json" class="hide">
+          </label>
+        </div>
+      </div>
+      <textarea id="bk" rows="3" placeholder="Tap 'Show Backup Text' to view raw data, or paste backup JSON here to restore..." class="text-xs font-mono"></textarea>
+      <div class="flex flex-wrap gap-2">
+        <button id="bkshow" class="btn btn-alt btn-sm">Show Backup Text</button>
+        <button id="bkcopy" class="btn btn-alt btn-sm">Copy Text</button>
+        <button id="bkrest" class="btn btn-accent btn-sm">Restore from Text</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 5. EXPENSES TAB ==================== -->
+  <section id="t-exp" class="hide space-y-4">
+    <div class="card">
+      <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+        <h2 class="text-2xl font-bold">Record Business Expense</h2>
+        <div class="flex flex-wrap gap-1.5" id="exp-quick-chips">
+          <button type="button" data-c="Stock / Printing" class="btn btn-alt btn-sm !py-1 !px-2.5 text-xs">👕 Stock / Printing</button>
+          <button type="button" data-c="Shop Rent" class="btn btn-alt btn-sm !py-1 !px-2.5 text-xs">🏪 Shop Rent</button>
+          <button type="button" data-c="Packaging / Courier" class="btn btn-alt btn-sm !py-1 !px-2.5 text-xs">📦 Packaging / Courier</button>
+          <button type="button" data-c="Marketing" class="btn btn-alt btn-sm !py-1 !px-2.5 text-xs">📣 Marketing</button>
+          <button type="button" data-c="Other" class="btn btn-alt btn-sm !py-1 !px-2.5 text-xs">🧾 Other</button>
+        </div>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-3">
+        <div>
+          <label class="block text-xs font-semibold text-[var(--muted)] mb-1" for="edate">Date</label>
+          <input id="edate" type="date">
+        </div>
+        <div>
+          <label class="block text-xs font-semibold text-[var(--muted)] mb-1" for="ecat">Category</label>
+          <select id="ecat">
+            <option value="Stock / Printing">Stock / Printing</option>
+            <option value="Shop Rent">Shop Rent</option>
+            <option value="Packaging / Courier">Packaging / Courier</option>
+            <option value="Marketing">Marketing</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+        <div>
+          <label class="block text-xs font-semibold text-[var(--muted)] mb-1" for="eamt">Amount (₹) *</label>
+          <input id="eamt" type="number" inputmode="decimal" min="0" placeholder="0">
+        </div>
+      </div>
+      <div class="mb-3">
+        <label class="block text-xs font-semibold text-[var(--muted)] mb-1" for="elab">Description / Notes</label>
+        <input id="elab" placeholder="e.g. Vinyl heat press rolls, DTDC courier for Thunder FC">
+      </div>
+      <button id="eadd" class="btn btn-accent">+ Add Expense</button>
+    </div>
+
+    <div class="flex items-center justify-between">
+      <h2 class="text-2xl font-bold">Expense History</h2>
+      <div id="exp-total-badge" class="chip due text-sm">Total: ₹0</div>
+    </div>
+    <div class="grid gap-2.5" id="explist"></div>
+  </section>
+
+  <!-- ==================== 6. CUSTOMERS & WHATSAPP CRM TAB ==================== -->
+  <section id="t-cust" class="hide space-y-4">
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-4">
+      <!-- Offer Composer -->
+      <div class="card md:col-span-7 space-y-2.5">
+        <div class="flex items-center justify-between">
+          <h2 class="text-xl font-bold">📣 WhatsApp Offer Composer</h2>
+          <span class="text-xs text-[var(--muted)]">Use <b>{name}</b> for customer's first name</span>
+        </div>
+        <select id="offpick" aria-label="Pick a jersey to preload"><option value="">✨ Pick a jersey from stock to auto-write promo…</option></select>
+        <textarea id="offer" rows="4" placeholder="Hi {name}! 🎉 New season football jerseys have just dropped. Order this week for 10% off!"></textarea>
+        <div class="flex flex-wrap items-center justify-between gap-2 pt-1">
+          <span class="text-xs text-[var(--muted)]">Tap "Send Offer" on any customer below to open their chat with this message.</span>
+          <button id="offcopy" class="btn btn-alt btn-sm">📋 Copy Message</button>
+        </div>
+      </div>
+
+      <!-- Manual Customer Add -->
+      <div class="card md:col-span-5 flex flex-col justify-between space-y-3">
+        <div>
+          <h2 class="text-xl font-bold mb-1">➕ Add Customer / Enquiry</h2>
+          <p class="text-xs text-[var(--muted)] mb-3">Customers from saved invoices are added automatically. Add walk-ins or Instagram leads here.</p>
+          <div class="space-y-2.5">
+            <div>
+              <label class="block text-xs font-semibold text-[var(--muted)] mb-1" for="cn">Customer / Team Name</label>
+              <input id="cn" placeholder="e.g. Arjun / Strikers XI">
+            </div>
+            <div>
+              <label class="block text-xs font-semibold text-[var(--muted)] mb-1" for="cp">WhatsApp Number</label>
+              <input id="cp" type="tel" inputmode="tel" placeholder="10-digit mobile number">
+            </div>
+          </div>
+        </div>
+        <button id="cadd" class="btn btn-primary w-full">+ Save Customer</button>
+      </div>
+    </div>
+
+    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pt-2">
+      <h2 class="text-2xl font-bold">Customer Directory <span id="ccount" class="text-[var(--muted)] font-normal"></span></h2>
+      <input id="csearch" placeholder="🔍 Search customer name or mobile..." aria-label="Search customers" class="sm:w-72">
+    </div>
+
+    <div class="grid gap-3" id="custlist"></div>
+  </section>
+
+</main>
+
+<!-- Quick Record Payment Modal -->
+<div id="pay-modal" class="hide fixed inset-0 z-50 bg-black/50 backdrop-blur-xs flex items-center justify-center p-4 noprint">
+  <div class="card max-w-sm w-full space-y-3 animate-fade-in">
+    <h3 class="text-xl font-bold" id="pm-title">Record Payment</h3>
+    <p class="text-xs text-[var(--muted)]" id="pm-sub"></p>
+    <div>
+      <label class="block text-xs font-semibold text-[var(--muted)] mb-1" for="pm-input">Total Advance / Amount Received (₹)</label>
+      <input id="pm-input" type="number" inputmode="decimal" min="0">
+    </div>
+    <div class="flex justify-end gap-2 pt-2">
+      <button id="pm-cancel" class="btn btn-alt btn-sm">Cancel</button>
+      <button id="pm-full" class="btn btn-wa btn-sm">Mark Full Paid</button>
+      <button id="pm-save" class="btn btn-primary btn-sm">Save Amount</button>
+    </div>
+  </div>
+</div>
+
+<!-- Standalone App Install & Offline Setup Modal -->
+<div id="app-modal" class="fixed inset-0 z-50 bg-black/50 backdrop-blur-xs flex items-center justify-center p-4 noprint">
+  <div class="card max-w-lg w-full space-y-4 max-h-[90vh] overflow-y-auto">
+    <div class="flex items-start justify-between gap-3">
+      <div class="flex items-center gap-3">
+        <div class="w-11 h-11 rounded-2xl bg-[var(--accent)] text-white flex items-center justify-center text-2xl shadow-sm shrink-0">⚽</div>
+        <div>
+          <h3 class="text-2xl font-bold leading-tight">Install as Standalone App</h3>
+          <p class="text-xs text-[var(--muted)]">Run full-screen offline on iPhone, Android, Mac, or Windows</p>
+        </div>
+      </div>
+      <button id="app-modal-close" class="btn btn-alt btn-sm !px-2.5">✕</button>
+    </div>
+
+    <!-- Native PWA Prompt Box (shown automatically when browser supports install prompt) -->
+    <div id="pwa-native-box" class="hide p-3.5 rounded-xl bg-[var(--good-soft)] border border-[var(--good)]/30 flex items-center justify-between gap-3">
+      <div class="text-xs">
+        <b class="text-sm text-[var(--good)] block">Ready for One-Tap Install!</b>
+        <span>Your browser supports direct standalone app installation.</span>
+      </div>
+      <button id="pwa-trigger-btn" class="btn btn-wa btn-sm shrink-0">📲 Install Now</button>
+    </div>
+
+    <!-- Step-by-Step Platform Guides -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
+      <div class="p-3.5 rounded-xl bg-[var(--field)] border border-[var(--line)] space-y-1.5">
+        <div class="font-bold text-sm text-[var(--ink)] flex items-center gap-1.5">🍎 iPhone / iPad (Safari)</div>
+        <ol class="list-decimal list-inside space-y-1 text-[var(--muted)]">
+          <li>Tap the <b>Share</b> button <span class="px-1.5 py-0.5 rounded bg-[var(--paper)] border border-[var(--line)] text-[var(--ink)]">⬆️</span> at the bottom of Safari.</li>
+          <li>Scroll down and tap <b>"Add to Home Screen"</b>.</li>
+          <li>Tap <b>Add</b> — launches full-screen without browser bars!</li>
+        </ol>
+      </div>
+      <div class="p-3.5 rounded-xl bg-[var(--field)] border border-[var(--line)] space-y-1.5">
+        <div class="font-bold text-sm text-[var(--ink)] flex items-center gap-1.5">🤖 Android / Chrome / Edge</div>
+        <ol class="list-decimal list-inside space-y-1 text-[var(--muted)]">
+          <li>Tap the browser menu <b>⋮</b> (top right).</li>
+          <li>Select <b>"Install App"</b> or <b>"Add to Home screen"</b>.</li>
+          <li>On Desktop Chrome/Edge, click the <b>Install icon</b> in the address bar.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Download Standalone Single-File App -->
+    <div class="p-4 rounded-xl border-2 border-dashed border-[var(--line)] bg-[var(--field)] flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+      <div class="space-y-0.5">
+        <div class="font-bold text-sm">💻 Keep Standalone Offline `.HTML` App File</div>
+        <p class="text-xs text-[var(--muted)]">Download this entire app as a single file. Open it anytime on any phone or laptop even without internet.</p>
+      </div>
+      <button id="dl-standalone-html" class="btn btn-accent btn-sm shrink-0">⬇️ Download App File</button>
+    </div>
+
+    <div class="flex items-center justify-between pt-2 border-t border-[var(--line)] text-xs text-[var(--muted)]">
+      <span>Storage key: <code>jersey_app_v1</code> (100% private on device)</span>
+      <button id="app-modal-done" class="btn btn-primary btn-sm">Got It</button>
+    </div>
+  </div>
+</div>
+
+<div id="toast" role="status"></div>
+
+<script>
+(function(){
+  var $ = function(id){ return document.getElementById(id); };
+  var KEY = 'jersey_app_v1';
+  var THEME_KEY = 'jersey_app_theme';
+
+  // Load State with 100% backward compatibility
+  var S = (function(){
+    try {
+      var d = JSON.parse(localStorage.getItem(KEY));
+      if (d && Array.isArray(d.inv)) return d;
+    } catch(e){}
+    return { inv: [], exp: [], biz: {}, cust: [], items: [], offer: '', sent: {} };
+  })();
+  S.cust = S.cust || [];
+  S.items = S.items || [];
+  S.offer = S.offer || '';
+  S.sent = S.sent || {};
+  S.biz = S.biz || {};
+  if (S.biz.binsta === undefined) {
+    S.biz.binsta = '@jerseyhub.official';
+  }
+
+  var SIZES = ['S', 'M', 'L', 'XL', 'XXL'];
+  var cur = null;
+  var mode = 'week';
+  var invFilter = 'all';
+  var stockFilter = 'all';
+  var payTargetId = null;
+
+  /* ==================== THEME MANAGEMENT ==================== */
+  function initTheme(){
+    var saved = localStorage.getItem(THEME_KEY);
+    var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    var theme = saved || (prefersDark ? 'dark' : 'light');
+    applyTheme(theme);
+  }
+  function applyTheme(t){
+    document.documentElement.setAttribute('data-theme', t);
+    $('theme-icon').textContent = t === 'dark' ? '☀️' : '🌙';
+    var metaTheme = $('meta-theme-color');
+    if (metaTheme) metaTheme.setAttribute('content', t === 'dark' ? '#111827' : '#ffffff');
+    try { localStorage.setItem(THEME_KEY, t); } catch(e){}
+  }
+  $('theme-btn').onclick = function(){
+    var curTheme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    applyTheme(curTheme);
+  };
+  initTheme();
+
+  /* ==================== STANDALONE PWA MANIFEST & INSTALLER ==================== */
+  var deferredPrompt = null;
+  function setupPWA(){
+    try {
+      var iconSvg = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 120'%3E%3Crect width='120' height='120' rx='28' fill='%23e11d48'/%3E%3Cpath d='M36 28h16l8 10 8-10h16l16 18-12 14-8-6v38H40V54l-8 6-12-14z' fill='%23fff'/%3E%3Ctext x='60' y='78' font-family='Arial,sans-serif' font-weight='900' font-size='22' fill='%23e11d48' text-anchor='middle'%3E10%3C/text%3E%3C/svg%3E";
+      var manifest = {
+        name: (S.biz && S.biz.bname) ? S.biz.bname + " — Jersey POS" : "Jersey Business App POS",
+        short_name: "Jersey POS",
+        description: "Standalone Jersey Business Billing, Size Inventory Matrix, Profit & WhatsApp CRM",
+        start_url: ".",
+        display: "standalone",
+        orientation: "portrait",
+        background_color: "#090d16",
+        theme_color: "#e11d48",
+        icons: [
+          { src: iconSvg, sizes: "192x192 512x512", type: "image/svg+xml", purpose: "any maskable" }
+        ]
+      };
+      var blob = new Blob([JSON.stringify(manifest)], { type: 'application/manifest+json' });
+      $('app-manifest').setAttribute('href', URL.createObjectURL(blob));
+    } catch(e){}
+  }
+  setupPWA();
+
+  window.addEventListener('beforeinstallprompt', function(e){
+    e.preventDefault();
+    deferredPrompt = e;
+    $('pwa-native-box').classList.remove('hide');
+  });
+
+  $('install-open-btn').onclick = function(){
+    $('app-modal').classList.remove('hide');
+  };
+  $('app-modal-close').onclick = $('app-modal-done').onclick = function(){
+    $('app-modal').classList.add('hide');
+  };
+  $('pwa-trigger-btn').onclick = function(){
+    if (!deferredPrompt) return;
+    deferredPrompt.prompt();
+    deferredPrompt.userChoice.then(function(){
+      deferredPrompt = null;
+      $('pwa-native-box').classList.add('hide');
+      $('app-modal').classList.add('hide');
+    });
+  };
+  $('dl-standalone-html').onclick = function(){
+    var htmlContent = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+    var blob = new Blob([htmlContent], { type: 'text/html;charset=utf-8' });
+    var a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = 'Jersey-Business-App.html';
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+    toast('Downloaded standalone Jersey-Business-App.html');
+  };
+
+  /* ==================== HELPERS ==================== */
+  function persist(){
+    try {
+      localStorage.setItem(KEY, JSON.stringify(S));
+      updateBadges();
+      var st = $('save-status');
+      if (st) {
+        st.textContent = 'Saved just now';
+        clearTimeout(persist.t);
+        persist.t = setTimeout(function(){ st.textContent = 'Offline Ready · Auto-saved'; }, 2000);
+      }
+    } catch(e){
+      toast('Could not save on this device');
+    }
+  }
+  function toast(m){
+    var t = $('toast');
+    t.textContent = m;
+    t.className = 'on';
+    clearTimeout(toast.h);
+    toast.h = setTimeout(function(){ t.className = ''; }, 2400);
+  }
+  var num = function(v){ var n = parseFloat(v); return isNaN(n) ? 0 : n; };
+  var fmt = function(n){
+    return (n < 0 ? '-' : '') + '₹' + (Math.round(Math.abs(n) * 100) / 100).toLocaleString('en-IN');
+  };
+  var pad = function(n){ return String(n).padStart(2, '0'); };
+  function iso(d){ return d.getFullYear() + '-' + pad(d.getMonth() + 1) + '-' + pad(d.getDate()); }
+  function today(){ return iso(new Date()); }
+  function esc(s){
+    var d = document.createElement('div');
+    d.textContent = s == null ? '' : s;
+    return d.innerHTML;
+  }
+  function uid(){ return Date.now().toString(36) + Math.random().toString(36).slice(2, 6); }
+
+  function updateHeaderBiz(){
+    $('hdr-bname').textContent = (S.biz.bname || 'JERSEY STUDIO POS').toUpperCase();
+    var insta = (S.biz.binsta || '').trim();
+    var footer = $('inv-insta-footer');
+    if (insta) {
+      var cleanHandle = insta.charAt(0) === '@' ? insta : '@' + insta;
+      var username = cleanHandle.replace(/^@+/, '');
+      $('inv-insta-handle').textContent = cleanHandle;
+      var link = $('inv-insta-link');
+      if (link) link.href = 'https://instagram.com/' + encodeURIComponent(username);
+      footer.classList.remove('hide');
+    } else {
+      footer.classList.add('hide');
+    }
+  }
+
+  function updateBadges(){
+    var invLen = S.inv.length;
+    var totalPcs = 0;
+    S.items.forEach(function(it){ totalPcs += totalStock(it); });
+    var custLen = custList().length;
+
+    $('badge-inv').textContent = invLen;
+    $('badge-stock').textContent = totalPcs;
+    $('badge-cust').textContent = custLen;
+
+    if ($('mbadge-inv')) $('mbadge-inv').textContent = invLen;
+    if ($('mbadge-stock')) $('mbadge-stock').textContent = totalPcs;
+    if ($('mbadge-cust')) $('mbadge-cust').textContent = custLen;
+
+    updateHeaderBiz();
+    refreshCustomerDatalist();
+  }
+
+  /* ==================== TABS (DESKTOP + MOBILE DOCK) ==================== */
+  function tab(t){
+    document.querySelectorAll('.nav-tabs .tab-btn, .mobile-dock .dock-btn').forEach(function(b){
+      b.classList.toggle('on', b.dataset.t === t);
+    });
+    ['invoice', 'list', 'dash', 'exp', 'cust', 'stock'].forEach(function(n){
+      $('t-' + n).classList.toggle('hide', n !== t);
+    });
+    if (t === 'list') renderList();
+    if (t === 'dash') renderDash();
+    if (t === 'exp') renderExp();
+    if (t === 'invoice') { refreshRows(); calc(); }
+    if (t === 'cust') renderCust();
+    if (t === 'stock') renderStock();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+  document.querySelectorAll('.nav-tabs .tab-btn, .mobile-dock .dock-btn').forEach(function(b){
+    b.onclick = function(){ tab(b.dataset.t); };
+  });
+  $('list-new-btn').onclick = function(){ blank(); tab('invoice'); };
+
+  /* ==================== STOCK & ITEM HELPERS ==================== */
+  var rowsEl = $('rows');
+  function dn(it){ return it.name + (it.ver ? ' – ' + it.ver : ''); }
+  function totalStock(it){
+    var t = 0;
+    SIZES.forEach(function(s){ t += num(it.sizes && it.sizes[s]); });
+    return t;
+  }
+  function infoOf(it){
+    return (it.ver || 'Jersey') + ' · Stock: ' + SIZES.map(function(s){
+      var q = num(it.sizes && it.sizes[s]);
+      return s + ':' + q;
+    }).join(' | ');
+  }
+  function itemOpts(){
+    var h = '<option value="">Pick jersey from stock…</option>';
+    S.items.forEach(function(it){
+      var n = totalStock(it);
+      h += '<option value="' + it.id + '">' + esc(dn(it)) + ' · ' + fmt(it.price) + ' (' + (n > 0 ? n + ' left' : 'Out of stock') + ')</option>';
+    });
+    return h + '<option value="_o">✍️ Custom / Other item (type manually)</option>';
+  }
+  function sizeOpts(it, sel){
+    var h = '<option value="">Size</option>';
+    SIZES.forEach(function(z){
+      var q = it && it.sizes ? num(it.sizes[z]) : null;
+      h += '<option value="' + z + '"' + (z === sel ? ' selected' : '') + '>' + z + (q !== null ? ' (' + q + ')' : '') + '</option>';
+    });
+    return h;
+  }
+  function byId(id){
+    return S.items.filter(function(x){ return x.id === id; })[0];
+  }
+  function refreshRows(){
+    Array.prototype.forEach.call(rowsEl.children, function(tr){
+      var p = tr.querySelector('.i-pick');
+      var v = p.value;
+      p.innerHTML = itemOpts();
+      p.value = v || '';
+    });
+  }
+
+  /* ==================== INVOICE BUILDER ==================== */
+  function addRow(d){
+    d = d || {};
+    var tr = document.createElement('tr');
+    tr.innerHTML =
+      '<td class="c-j">' +
+        '<select class="i-pick" aria-label="Pick jersey"></select>' +
+        '<input class="i-desc hide mt-1.5" placeholder="Type custom jersey / printing name" aria-label="Jersey name">' +
+        '<div class="i-info noprint text-[11px] text-[var(--muted)] mt-1"></div>' +
+        '<span class="ptxt p-desc"></span>' +
+      '</td>' +
+      '<td class="c-s">' +
+        '<select class="i-size" aria-label="Size"></select>' +
+        '<span class="ptxt p-size"></span>' +
+      '</td>' +
+      '<td><input class="i-qty text-center font-semibold" type="number" inputmode="numeric" min="0" placeholder="1" aria-label="Quantity"></td>' +
+      '<td><input class="i-rate text-right" type="number" inputmode="decimal" min="0" placeholder="0" aria-label="Rate"></td>' +
+      '<td class="amt">₹0</td>' +
+      '<td class="noprint costcol"><input class="i-cost text-right !bg-transparent" type="number" inputmode="decimal" min="0" placeholder="0" aria-label="Your cost each"></td>' +
+      '<td class="noprint text-center"><button type="button" class="x text-[var(--muted)] hover:text-[var(--accent)] font-bold text-lg px-2 py-1" aria-label="Remove item">×</button></td>';
+
+    var pick = tr.querySelector('.i-pick'),
+        desc = tr.querySelector('.i-desc'),
+        size = tr.querySelector('.i-size'),
+        info = tr.querySelector('.i-info');
+    var qty = tr.querySelector('.i-qty'),
+        rate = tr.querySelector('.i-rate'),
+        cost = tr.querySelector('.i-cost');
+
+    pick.innerHTML = itemOpts();
+    size.innerHTML = sizeOpts(null, d.size || '');
+
+    var it = d.iid ? byId(d.iid) : null;
+    if (it) {
+      pick.value = it.id;
+      size.innerHTML = sizeOpts(it, d.size || '');
+      info.textContent = infoOf(it);
+    } else if (d.desc) {
+      pick.value = '_o';
+      desc.classList.remove('hide');
+      desc.value = d.desc;
+    }
+
+    qty.value = d.qty == null ? '' : d.qty;
+    rate.value = d.rate == null ? '' : d.rate;
+    cost.value = d.cost == null ? '' : d.cost;
+
+    pick.onchange = function(){
+      var v = pick.value, x = byId(v);
+      desc.classList.toggle('hide', v !== '_o');
+      if (v === '_o') desc.focus();
+      if (x) {
+        // Default to first available size if none picked
+        var defSize = '';
+        for (var k = 0; k < SIZES.length; k++) {
+          if (num(x.sizes[SIZES[k]]) > 0) { defSize = SIZES[k]; break; }
+        }
+        size.innerHTML = sizeOpts(x, defSize);
+        rate.value = x.price || '';
+        cost.value = x.cost || '';
+        if (!qty.value) qty.value = 1;
+        info.textContent = infoOf(x);
+      } else {
+        size.innerHTML = sizeOpts(null, '');
+        info.textContent = '';
+        if (v === '_o' && !qty.value) qty.value = 1;
+      }
+      calc();
+    };
+
+    size.onchange = calc;
+
+    tr.querySelector('.x').onclick = function(){
+      if (rowsEl.children.length > 1) {
+        tr.remove();
+      } else {
+        tr.querySelectorAll('input').forEach(function(i){ i.value = ''; });
+        pick.value = '';
+        desc.classList.add('hide');
+        size.innerHTML = sizeOpts(null, '');
+        info.textContent = '';
+      }
+      calc();
+    };
+
+    rowsEl.appendChild(tr);
+  }
+
+  function items(){
+    return Array.prototype.map.call(rowsEl.children, function(tr){
+      var g = function(c){ return tr.querySelector(c).value; };
+      var x = byId(g('.i-pick'));
+      return {
+        iid: x ? x.id : '',
+        desc: x ? dn(x) : g('.i-desc').trim(),
+        size: g('.i-size'),
+        qty: num(g('.i-qty')),
+        rate: num(g('.i-rate')),
+        cost: num(g('.i-cost')),
+        tr: tr
+      };
+    });
+  }
+
+  function calc(){
+    var sub = 0, cogs = 0, totQty = 0;
+    items().forEach(function(i){
+      var a = i.qty * i.rate;
+      i.tr.querySelector('.amt').textContent = fmt(a);
+      i.tr.querySelector('.p-desc').textContent = i.desc || 'Jersey';
+      i.tr.querySelector('.p-size').textContent = i.size || '-';
+      sub += a;
+      cogs += i.qty * i.cost;
+      totQty += i.qty;
+    });
+    var disc = Math.min(num($('disc').value), sub);
+    var total = sub - disc;
+    var adv = num($('adv').value);
+    var bal = Math.max(total - adv, 0);
+
+    $('tot-qty').textContent = totQty + (totQty === 1 ? ' pc' : ' pcs');
+    $('sub').textContent = fmt(sub);
+    $('total').textContent = fmt(total);
+    $('bal').textContent = fmt(bal);
+
+    var p = total - cogs;
+    var margin = total > 0 ? Math.round((p / total) * 100) : 0;
+    $('ip').textContent = fmt(p);
+    $('ip').style.color = p < 0 ? 'var(--accent)' : 'var(--good)';
+    $('imargin').textContent = '(' + margin + '% margin)';
+
+    // UPI Box update
+    var upi = ($('bupi').value || '').trim();
+    if (upi && bal > 0) {
+      $('upi-box').classList.remove('hide');
+      $('upi-id-txt').textContent = 'UPI ID: ' + upi;
+      $('upi-amt-txt').textContent = 'Amount Due: ' + fmt(bal);
+      var bname = encodeURIComponent($('bname').value || 'Jersey Store');
+      $('upi-pay-link').href = 'upi://pay?pa=' + encodeURIComponent(upi) + '&pn=' + bname + '&am=' + bal + '&cu=INR';
+    } else {
+      $('upi-box').classList.add('hide');
+    }
+
+    return { sub: sub, disc: disc, total: total, adv: adv, cogs: cogs, bal: bal, qty: totQty };
+  }
+
+  $('full-paid-btn').onclick = function(){
+    var t = calc();
+    $('adv').value = t.total;
+    calc();
+  };
+
+  function pad3(n){ return String(n).padStart(3, '0'); }
+  function nextNo(){
+    var m = 0;
+    S.inv.forEach(function(v){
+      var x = String(v.no).match(/(\d+)\s*$/);
+      if (x) m = Math.max(m, parseInt(x[1], 10));
+    });
+    return 'INV-' + pad3(m + 1);
+  }
+
+  function blank(){
+    cur = null;
+    $('edit-indicator').classList.add('hide');
+    $('invno').value = nextNo();
+    $('date').value = today();
+    ['due', 'cname', 'cphone', 'disc', 'adv', 'notes'].forEach(function(i){ $(i).value = ''; });
+    rowsEl.innerHTML = '';
+    addRow();
+    calc();
+  }
+
+  function fill(v){
+    cur = v.id;
+    $('edit-indicator').classList.remove('hide');
+    $('invno').value = v.no;
+    $('date').value = v.date;
+    $('due').value = v.due || '';
+    $('cname').value = v.cname || '';
+    $('cphone').value = v.cphone || '';
+    $('disc').value = v.disc || '';
+    $('adv').value = v.adv || '';
+    $('notes').value = v.notes || '';
+    rowsEl.innerHTML = '';
+    (v.items && v.items.length ? v.items : [{}]).forEach(addRow);
+    calc();
+  }
+
+  function snapshot(){
+    var t = calc();
+    return {
+      id: cur || uid(),
+      no: $('invno').value.trim() || nextNo(),
+      date: $('date').value || today(),
+      due: $('due').value,
+      cname: $('cname').value.trim(),
+      cphone: $('cphone').value.trim(),
+      items: items().filter(function(i){ return i.desc || i.qty || i.rate; }).map(function(i){
+        return { desc: i.desc, size: i.size, iid: i.iid, qty: i.qty, rate: i.rate, cost: i.cost };
+      }),
+      disc: t.disc,
+      adv: t.adv,
+      notes: $('notes').value.trim(),
+      total: t.total,
+      cogs: t.cogs
+    };
+  }
+
+  $('save').onclick = function(){
+    var v = snapshot();
+    if (!v.items.length) {
+      toast('Please add at least one jersey item');
+      return;
+    }
+    var i = S.inv.findIndex(function(x){ return x.id === v.id; });
+    if (i >= 0) adjustStock(S.inv[i].items, 1);
+    adjustStock(v.items, -1);
+    if (i >= 0) S.inv[i] = v;
+    else S.inv.push(v);
+
+    cur = v.id;
+    $('edit-indicator').classList.remove('hide');
+    persist();
+    refreshRows();
+    toast('Saved Invoice ' + v.no);
+  };
+
+  $('new').onclick = function(){ blank(); toast('Ready for new invoice'); };
+  $('addrow').onclick = function(){
+    addRow();
+    var lastPick = rowsEl.lastChild.querySelector('.i-pick');
+    if (lastPick) lastPick.focus();
+  };
+  $('print').onclick = function(){
+    var oldTitle = document.title;
+    document.title = ($('invno').value || 'Invoice') + ($('cname').value ? ' - ' + $('cname').value : '');
+    window.print();
+    document.title = oldTitle;
+  };
+
+  function buildInvMessage(v, sms){
+    var L = [], b = function(x){ return sms ? x : '*' + x + '*'; };
+    var sub = 0;
+    L.push(b(S.biz.bname || 'JERSEY INVOICE'));
+    L.push('Invoice ' + v.no + ' | Date: ' + v.date);
+    if (v.cname) L.push('Customer: ' + v.cname);
+    L.push('------------------------');
+    v.items.forEach(function(i){
+      var amt = i.qty * i.rate;
+      sub += amt;
+      L.push('• ' + (i.desc || 'Jersey') + (i.size ? ' [' + i.size + ']' : '') + ' × ' + i.qty + ' = ' + fmt(amt));
+    });
+    L.push('------------------------');
+    L.push('Subtotal: ' + fmt(sub));
+    if (v.disc) L.push('Discount: -' + fmt(v.disc));
+    L.push(b('Total: ' + fmt(v.total)));
+    if (v.adv) L.push('Advance Paid: ' + fmt(v.adv));
+    var bal = Math.max(v.total - (v.adv || 0), 0);
+    L.push(b('Balance Due: ' + fmt(bal)));
+    if (S.biz.bupi && bal > 0) L.push('Pay via UPI: ' + S.biz.bupi);
+    if (v.due) L.push('Delivery Date: ' + v.due);
+    if (v.notes) L.push('Note: ' + v.notes);
+    if (S.biz.bphone) L.push('Contact: ' + S.biz.bphone);
+    if (S.biz.binsta) {
+      var ig = S.biz.binsta.trim();
+      L.push('📸 Instagram: ' + (ig.charAt(0) === '@' ? ig : '@' + ig));
+    }
+    L.push('Thank you for your order! ⚽');
+    var out = L.join('\n');
+    return sms ? out.replace(/\u20b9/g, 'Rs.').replace(/\u2013/g, '-') : out;
+  }
+
+  function cleanPhone(raw){
+    var p = (raw || '').replace(/\D/g, '');
+    if (p.length === 10) p = '91' + p;
+    return p;
+  }
+
+  $('wa').onclick = function(){
+    var v = snapshot();
+    var p = cleanPhone(v.cphone);
+    var url = 'https://wa.me/' + p + '?text=' + encodeURIComponent(buildInvMessage(v, false));
+    window.open(url, '_blank');
+  };
+
+  $('share-bill').onclick = function(){
+    var v = snapshot();
+    var txt = buildInvMessage(v, false);
+    if (navigator.share) {
+      navigator.share({
+        title: (S.biz.bname || 'Jersey') + ' Invoice ' + v.no,
+        text: txt
+      }).catch(function(){});
+    } else {
+      try {
+        var ta = document.createElement('textarea');
+        ta.value = txt;
+        document.body.appendChild(ta);
+        ta.select();
+        document.execCommand('copy');
+        ta.remove();
+        toast('Bill text copied to clipboard!');
+      } catch(e){
+        toast('Use WhatsApp or Print button to share');
+      }
+    }
+  };
+
+  $('sms').onclick = function(){
+    var v = snapshot();
+    var p = cleanPhone(v.cphone);
+    if (!p) { toast('Enter the customer mobile number first'); return; }
+    var a = document.createElement('a');
+    a.href = 'sms:+' + p + '?&body=' + encodeURIComponent(buildInvMessage(v, true));
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+    toast('Opening SMS app…');
+  };
+
+  // Auto-save business header details
+  ['bname', 'bphone', 'binsta', 'baddr', 'bupi'].forEach(function(id){
+    if (S.biz[id] != null) $(id).value = S.biz[id];
+    $(id).addEventListener('input', function(){
+      S.biz[id] = $(id).value;
+      persist();
+      calc();
+    });
+  });
+
+  // Customer Autocomplete fills Phone Number automatically
+  function refreshCustomerDatalist(){
+    var all = custList();
+    $('cust-dl').innerHTML = all.filter(function(c){ return c.name; }).map(function(c){
+      return '<option value="' + esc(c.name) + '">' + esc(c.phone || '') + '</option>';
+    }).join('');
+  }
+  $('cname').addEventListener('change', function(){
+    var val = $('cname').value.trim().toLowerCase();
+    if (!val || $('cphone').value.trim()) return;
+    var found = custList().filter(function(c){ return (c.name || '').toLowerCase() === val && c.phone; })[0];
+    if (found) $('cphone').value = found.phone;
+  });
+
+  document.addEventListener('input', function(e){
+    if (e.target.closest('#t-invoice')) calc();
+  });
+
+  /* ==================== SAVED INVOICES LIST ==================== */
+  function balOf(v){ return Math.max(v.total - (v.adv || 0), 0); }
+
+  document.querySelectorAll('#inv-filter-btns button').forEach(function(b){
+    b.onclick = function(){
+      invFilter = b.dataset.f;
+      document.querySelectorAll('#inv-filter-btns button').forEach(function(x){
+        x.className = x.dataset.f === invFilter ? 'btn btn-primary btn-sm' : 'btn btn-alt btn-sm';
+      });
+      renderList();
+    };
+  });
+  $('inv-search').addEventListener('input', renderList);
+
+  function renderList(){
+    var L = $('invlist');
+    var sumEl = $('inv-summary');
+
+    var totalRev = 0, totalDue = 0, dueCount = 0, paidCount = 0;
+    S.inv.forEach(function(v){
+      var b = balOf(v);
+      totalRev += v.total;
+      totalDue += b;
+      if (b > 0) dueCount++; else paidCount++;
+    });
+
+    sumEl.innerHTML =
+      '<div class="card !p-3"><span class="text-xs text-[var(--muted)] block">Total Invoices</span><b class="font-condensed text-2xl">' + S.inv.length + '</b></div>' +
+      '<div class="card !p-3"><span class="text-xs text-[var(--muted)] block">Total Billed</span><b class="font-condensed text-2xl">' + fmt(totalRev) + '</b></div>' +
+      '<div class="card !p-3"><span class="text-xs text-[var(--muted)] block">Collected</span><b class="font-condensed text-2xl text-[var(--good)]">' + fmt(totalRev - totalDue) + '</b></div>' +
+      '<div class="card !p-3"><span class="text-xs text-[var(--muted)] block">Pending Balance (' + dueCount + ')</span><b class="font-condensed text-2xl text-[var(--accent)]">' + fmt(totalDue) + '</b></div>';
+
+    if (!S.inv.length) {
+      L.innerHTML = '<div class="card text-center py-10 text-[var(--muted)]">No saved invoices yet. Create an invoice on the first tab or click "✨ Demo Data" above.</div>';
+      return;
+    }
+
+    var q = ($('inv-search').value || '').trim().toLowerCase();
+    var filtered = S.inv.slice().sort(function(a, b){
+      return a.date < b.date ? 1 : a.date > b.date ? -1 : a.no < b.no ? 1 : -1;
+    }).filter(function(v){
+      var b = balOf(v);
+      if (invFilter === 'due' && b <= 0) return false;
+      if (invFilter === 'paid' && b > 0) return false;
+      if (q) {
+        var hay = (v.no + ' ' + (v.cname || '') + ' ' + (v.cphone || '')).toLowerCase();
+        if (hay.indexOf(q) < 0) return false;
+      }
+      return true;
+    });
+
+    if (!filtered.length) {
+      L.innerHTML = '<div class="card text-center py-8 text-[var(--muted)]">No invoices match your search or filter.</div>';
+      return;
+    }
+
+    L.innerHTML = '';
+    filtered.forEach(function(v){
+      var d = document.createElement('div');
+      d.className = 'card flex flex-col gap-3';
+      var b = balOf(v);
+      var pcs = v.items.reduce(function(s, i){ return s + i.qty; }, 0);
+      var itemPreview = v.items.slice(0, 2).map(function(i){
+        return (i.desc || 'Jersey') + (i.size ? ' (' + i.size + ')' : '') + ' ×' + i.qty;
+      }).join(', ') + (v.items.length > 2 ? ' +' + (v.items.length - 2) + ' more' : '');
+
+      d.innerHTML =
+        '<div class="flex items-start justify-between gap-2">' +
+          '<div>' +
+            '<div class="flex items-center gap-2 flex-wrap">' +
+              '<span class="font-condensed font-bold text-lg text-[var(--accent)]">' + esc(v.no) + '</span>' +
+              '<b class="text-base">' + esc(v.cname || 'Walk-in Customer') + '</b>' +
+              (v.cphone ? '<span class="text-xs text-[var(--muted)]">📞 ' + esc(v.cphone) + '</span>' : '') +
+            '</div>' +
+            '<div class="text-xs text-[var(--muted)] mt-0.5">' +
+              '📅 ' + esc(v.date) +
+              (v.due ? ' · 🚚 Due: <b>' + esc(v.due) + '</b>' : '') +
+              ' · 👕 ' + pcs + ' pcs' +
+            '</div>' +
+            '<div class="text-xs text-[var(--muted)] mt-1 truncate max-w-xl">' + esc(itemPreview) + '</div>' +
+          '</div>' +
+          '<div class="text-right shrink-0">' +
+            '<div class="font-condensed font-bold text-2xl leading-none mb-1">' + fmt(v.total) + '</div>' +
+            '<span class="chip ' + (b ? 'due' : 'paid') + '">' + (b ? 'Due ' + fmt(b) : '✓ Paid') + '</span>' +
+          '</div>' +
+        '</div>' +
+        '<div class="flex flex-wrap items-center justify-between gap-2 pt-2 border-t border-[var(--line)]">' +
+          '<div class="flex flex-wrap gap-1.5">' +
+            '<button class="btn btn-alt btn-sm o">✏️ Open / Edit</button>' +
+            '<button class="btn btn-alt btn-sm pay">💰 ' + (b ? 'Record Payment' : 'Edit Payment') + '</button>' +
+            '<button class="btn btn-wa btn-sm w">💬 WhatsApp</button>' +
+          '</div>' +
+          '<button class="btn btn-del btn-sm d">🗑️ Delete</button>' +
+        '</div>';
+
+      d.querySelector('.o').onclick = function(){ fill(v); tab('invoice'); };
+      d.querySelector('.pay').onclick = function(){ openPayModal(v); };
+      d.querySelector('.w').onclick = function(){
+        var p = cleanPhone(v.cphone);
+        window.open('https://wa.me/' + p + '?text=' + encodeURIComponent(buildInvMessage(v, false)), '_blank');
+      };
+      var x = d.querySelector('.d');
+      x.onclick = function(){
+        if (x.dataset.s) {
+          adjustStock(v.items, 1);
+          S.inv = S.inv.filter(function(i){ return i.id !== v.id; });
+          if (cur === v.id) blank();
+          persist();
+          renderList();
+          toast('Invoice deleted & stock restored');
+        } else {
+          x.dataset.s = 1;
+          x.textContent = 'Tap again to confirm';
+          setTimeout(function(){ x.dataset.s = ''; x.textContent = '🗑️ Delete'; }, 3000);
+        }
+      };
+      L.appendChild(d);
+    });
+  }
+
+  /* Payment Modal Logic */
+  function openPayModal(v){
+    payTargetId = v.id;
+    $('pm-title').textContent = 'Payment for ' + v.no;
+    $('pm-sub').textContent = (v.cname || 'Customer') + ' · Invoice Total: ' + fmt(v.total);
+    $('pm-input').value = v.adv || 0;
+    $('pay-modal').classList.remove('hide');
+    $('pm-input').focus();
+  }
+  $('pm-cancel').onclick = function(){ $('pay-modal').classList.add('hide'); };
+  $('pm-full').onclick = function(){
+    var v = S.inv.filter(function(x){ return x.id === payTargetId; })[0];
+    if (v) {
+      v.adv = v.total;
+      if (cur === v.id) $('adv').value = v.total;
+      persist();
+      renderList();
+      toast('Marked ' + v.no + ' as Fully Paid');
+    }
+    $('pay-modal').classList.add('hide');
+  };
+  $('pm-save').onclick = function(){
+    var v = S.inv.filter(function(x){ return x.id === payTargetId; })[0];
+    if (v) {
+      v.adv = num($('pm-input').value);
+      if (cur === v.id) $('adv').value = v.adv;
+      persist();
+      renderList();
+      toast('Updated payment for ' + v.no);
+    }
+    $('pay-modal').classList.add('hide');
+  };
+
+  /* ==================== PROFIT & ANALYTICS DASHBOARD ==================== */
+  function wk(s){
+    var d = new Date(s + 'T00:00:00');
+    d.setDate(d.getDate() - ((d.getDay() + 6) % 7));
+    return iso(d);
+  }
+  function keyOf(s){ return mode === 'week' ? wk(s) : s.slice(0, 7); }
+  function label(k){
+    if (mode === 'month') {
+      return new Date(k + '-01T00:00:00').toLocaleDateString('en-IN', { month: 'short', year: 'numeric' });
+    }
+    var a = new Date(k + 'T00:00:00'), b = new Date(a);
+    b.setDate(b.getDate() + 6);
+    var f = { day: 'numeric', month: 'short' };
+    return a.toLocaleDateString('en-IN', f) + ' – ' + b.toLocaleDateString('en-IN', f);
+  }
+  function periods(){
+    var n = mode === 'week' ? 8 : 6, out = [], now = new Date();
+    for (var i = 0; i < n; i++) {
+      var d;
+      if (mode === 'week') {
+        d = new Date(wk(today()) + 'T00:00:00');
+        d.setDate(d.getDate() - 7 * i);
+        out.push(iso(d));
+      } else {
+        d = new Date(now.getFullYear(), now.getMonth() - i, 1);
+        out.push(iso(d).slice(0, 7));
+      }
+    }
+    return out;
+  }
+  function agg(k){
+    var r = { sales: 0, cogs: 0, exp: 0, inv: [] };
+    S.inv.forEach(function(v){
+      if (keyOf(v.date) === k) {
+        r.sales += v.total;
+        r.cogs += v.cogs || 0;
+        r.inv.push(v);
+      }
+    });
+    S.exp.forEach(function(e){
+      if (keyOf(e.date) === k) r.exp += e.amt;
+    });
+    r.profit = r.sales - r.cogs - r.exp;
+    return r;
+  }
+
+  function renderDash(){
+    $('pw').className = mode === 'week' ? 'btn btn-primary btn-sm' : 'btn btn-alt btn-sm !border-0';
+    $('pm').className = mode === 'month' ? 'btn btn-primary btn-sm' : 'btn btn-alt btn-sm !border-0';
+    $('phead').textContent = mode === 'week' ? 'Last 8 Weeks Breakdown' : 'Last 6 Months Breakdown';
+
+    var ks = periods(), c = agg(ks[0]), pending = 0;
+    S.inv.forEach(function(v){ pending += balOf(v); });
+    var margin = c.sales > 0 ? Math.round((c.profit / c.sales) * 100) : 0;
+
+    $('stats').innerHTML =
+      '<div class="card !p-3.5"><span class="text-xs text-[var(--muted)] block">Sales (' + (mode === 'week' ? 'This Week' : 'This Month') + ')</span><b class="font-condensed text-3xl">' + fmt(c.sales) + '</b><span class="text-[11px] text-[var(--muted)] block mt-0.5">' + c.inv.length + ' orders</span></div>' +
+      '<div class="card !p-3.5"><span class="text-xs text-[var(--muted)] block">Net Profit (' + margin + '%)</span><b class="font-condensed text-3xl ' + (c.profit < 0 ? 'text-[var(--accent)]' : 'text-[var(--good)]') + '">' + fmt(c.profit) + '</b><span class="text-[11px] text-[var(--muted)] block mt-0.5">After COGS & expenses</span></div>' +
+      '<div class="card !p-3.5"><span class="text-xs text-[var(--muted)] block">Jersey Cost + Expenses</span><b class="font-condensed text-3xl">' + fmt(c.cogs + c.exp) + '</b><span class="text-[11px] text-[var(--muted)] block mt-0.5">COGS ' + fmt(c.cogs) + ' · Exp ' + fmt(c.exp) + '</span></div>' +
+      '<div class="card !p-3.5"><span class="text-xs text-[var(--muted)] block">Unpaid Customer Dues</span><b class="font-condensed text-3xl ' + (pending ? 'text-[var(--accent)]' : '') + '">' + fmt(pending) + '</b><span class="text-[11px] text-[var(--muted)] block mt-0.5">All-time receivable</span></div>';
+
+    var rows = ks.map(function(k){ return { k: k, a: agg(k) }; });
+    var max = Math.max.apply(null, rows.map(function(r){ return Math.abs(r.a.profit); }).concat([1]));
+
+    $('periods').innerHTML =
+      '<div class="prow text-xs font-bold uppercase text-[var(--muted)]"><span>Period</span><span style="min-width:85px;text-align:right">Sales</span><b>Net Profit</b></div>' +
+      rows.map(function(r){
+        var w = Math.round((Math.abs(r.a.profit) / max) * 100);
+        return '<div class="prow">' +
+          '<span class="font-medium">' + esc(label(r.k)) + '</span>' +
+          '<span style="min-width:85px;text-align:right" class="text-[var(--muted)]">' + fmt(r.a.sales) + '</span>' +
+          '<b class="' + (r.a.profit < 0 ? 'text-[var(--accent)]' : 'text-[var(--good)]') + '">' + fmt(r.a.profit) + '</b>' +
+          '<i class="' + (r.a.profit < 0 ? 'n' : '') + '" style="width:' + w + '%"></i>' +
+        '</div>';
+      }).join('');
+
+    var m = {};
+    c.inv.forEach(function(v){
+      v.items.forEach(function(i){
+        var k = i.desc || 'Custom Jersey';
+        m[k] = m[k] || { q: 0, r: 0 };
+        m[k].q += i.qty;
+        m[k].r += i.qty * i.rate;
+      });
+    });
+    var top = Object.keys(m).sort(function(a, b){ return m[b].r - m[a].r; }).slice(0, 6);
+    $('top').innerHTML = top.length
+      ? top.map(function(k, idx){
+          return '<div class="prow" style="grid-template-columns:1fr auto">' +
+            '<span><b class="text-[var(--muted)] mr-1">#' + (idx + 1) + '</b> ' + esc(k) + ' <span class="chip paid !py-0 !px-2 ml-1">' + m[k].q + ' pcs</span></span>' +
+            '<b>' + fmt(m[k].r) + '</b>' +
+          '</div>';
+        }).join('')
+      : '<div class="text-center py-8 text-[var(--muted)] text-sm">No jersey sales recorded in this period yet.</div>';
+  }
+  $('pw').onclick = function(){ mode = 'week'; renderDash(); };
+  $('pm').onclick = function(){ mode = 'month'; renderDash(); };
+
+  /* ==================== EXPENSES ==================== */
+  function renderExp(){
+    if (!$('edate').value) $('edate').value = today();
+    var L = $('explist');
+    var tot = S.exp.reduce(function(s, e){ return s + num(e.amt); }, 0);
+    $('exp-total-badge').textContent = 'Total Expenses: ' + fmt(tot);
+
+    if (!S.exp.length) {
+      L.innerHTML = '<div class="card text-center py-8 text-[var(--muted)]">No expenses logged yet. Add printing, courier, packaging, or rent above.</div>';
+      return;
+    }
+    L.innerHTML = '';
+    S.exp.slice().sort(function(a, b){ return a.date < b.date ? 1 : -1; }).forEach(function(e){
+      var d = document.createElement('div');
+      d.className = 'card !p-3.5 flex items-center justify-between gap-3';
+      d.innerHTML =
+        '<div>' +
+          '<div class="flex items-center gap-2">' +
+            '<b>' + esc(e.label || 'Expense') + '</b>' +
+            (e.cat ? '<span class="text-xs px-2 py-0.5 rounded-full bg-[var(--field)] border border-[var(--line)] text-[var(--muted)]">' + esc(e.cat) + '</span>' : '') +
+          '</div>' +
+          '<div class="text-xs text-[var(--muted)] mt-0.5">📅 ' + esc(e.date) + '</div>' +
+        '</div>' +
+        '<div class="flex items-center gap-3">' +
+          '<b class="font-condensed text-xl text-[var(--accent)]">' + fmt(e.amt) + '</b>' +
+          '<button class="btn btn-del btn-sm d">Delete</button>' +
+        '</div>';
+
+      var x = d.querySelector('.d');
+      x.onclick = function(){
+        if (x.dataset.s) {
+          S.exp = S.exp.filter(function(i){ return i.id !== e.id; });
+          persist();
+          renderExp();
+          toast('Expense deleted');
+        } else {
+          x.dataset.s = 1;
+          x.textContent = 'Confirm?';
+          setTimeout(function(){ x.dataset.s = ''; x.textContent = 'Delete'; }, 3000);
+        }
+      };
+      L.appendChild(d);
+    });
+  }
+
+  document.querySelectorAll('#exp-quick-chips button').forEach(function(b){
+    b.onclick = function(){
+      $('ecat').value = b.dataset.c;
+      if (!$('elab').value.trim()) $('elab').placeholder = b.dataset.c + ' details...';
+      $('eamt').focus();
+    };
+  });
+
+  $('eadd').onclick = function(){
+    var a = num($('eamt').value);
+    if (!a) { toast('Enter an expense amount'); return; }
+    var cat = $('ecat').value;
+    var desc = $('elab').value.trim() || cat;
+    S.exp.push({
+      id: uid(),
+      date: $('edate').value || today(),
+      cat: cat,
+      label: desc,
+      amt: a
+    });
+    $('eamt').value = '';
+    $('elab').value = '';
+    persist();
+    renderExp();
+    toast('Expense recorded');
+  };
+
+  /* ==================== STOCK INVENTORY MATRIX ==================== */
+  function findItem(n){
+    n = (n || '').trim().toLowerCase();
+    if (!n) return null;
+    for (var i = 0; i < S.items.length; i++) {
+      if (dn(S.items[i]).toLowerCase() === n) return S.items[i];
+    }
+    return null;
+  }
+  function adjustStock(list, sign){
+    (list || []).forEach(function(l){
+      var it = l.iid ? byId(l.iid) : findItem(l.desc);
+      if (it && it.sizes && l.size && it.sizes[l.size] != null) {
+        it.sizes[l.size] = Math.max(0, num(it.sizes[l.size]) + sign * num(l.qty));
+      }
+    });
+  }
+  function refreshItemList(){
+    $('itemlist').innerHTML = S.items.map(function(i){
+      return '<option value="' + esc(i.name).replace(/"/g, '&quot;') + '">';
+    }).join('');
+  }
+  function migrate(){
+    S.items.forEach(function(it){
+      if (!it.sizes) {
+        it.sizes = { S: 0, M: num(it.stock), L: 0, XL: 0, XXL: 0 };
+        delete it.stock;
+      }
+      if (it.ver == null) it.ver = '';
+    });
+  }
+
+  document.querySelectorAll('#stock-filter-btns button').forEach(function(b){
+    b.onclick = function(){
+      stockFilter = b.dataset.sf;
+      document.querySelectorAll('#stock-filter-btns button').forEach(function(x){
+        x.className = x.dataset.sf === stockFilter ? 'btn btn-primary btn-sm' : 'btn btn-alt btn-sm';
+      });
+      renderStock();
+    };
+  });
+  $('stock-search').addEventListener('input', renderStock);
+
+  function renderStock(){
+    refreshItemList();
+    var L = $('stocklist');
+    var sumEl = $('stock-summary');
+
+    var totalUnits = 0, costVal = 0, retailVal = 0, lowCount = 0;
+    S.items.forEach(function(it){
+      var t = totalStock(it);
+      totalUnits += t;
+      costVal += t * num(it.cost);
+      retailVal += t * num(it.price);
+      if (t <= num(it.low)) lowCount++;
+    });
+
+    sumEl.innerHTML =
+      '<div class="card !p-3"><span class="text-xs text-[var(--muted)] block">Total Jerseys in Stock</span><b class="font-condensed text-2xl">' + totalUnits + ' pcs</b></div>' +
+      '<div class="card !p-3"><span class="text-xs text-[var(--muted)] block">Stock Value (At Cost)</span><b class="font-condensed text-2xl">' + fmt(costVal) + '</b></div>' +
+      '<div class="card !p-3"><span class="text-xs text-[var(--muted)] block">Est. Retail Value</span><b class="font-condensed text-2xl text-[var(--good)]">' + fmt(retailVal) + '</b></div>' +
+      '<div class="card !p-3"><span class="text-xs text-[var(--muted)] block">Low / Out of Stock</span><b class="font-condensed text-2xl ' + (lowCount ? 'text-[var(--accent)]' : '') + '">' + lowCount + ' items</b></div>';
+
+    if (!S.items.length) {
+      L.innerHTML = '<div class="card text-center py-10 text-[var(--muted)]">No jerseys in stock yet. Add your first jersey above or load Demo Data.</div>';
+      return;
+    }
+
+    var q = ($('stock-search').value || '').trim().toLowerCase();
+    var filtered = S.items.filter(function(it){
+      var t = totalStock(it);
+      var isLow = t <= num(it.low);
+      if (stockFilter === 'low' && !isLow) return false;
+      if (stockFilter === 'in' && t <= 0) return false;
+      if (q && dn(it).toLowerCase().indexOf(q) < 0) return false;
+      return true;
+    });
+
+    if (!filtered.length) {
+      L.innerHTML = '<div class="card text-center py-8 text-[var(--muted)]">No jerseys match your filter.</div>';
+      return;
+    }
+
+    L.innerHTML = '';
+    filtered.forEach(function(it){
+      var d = document.createElement('div');
+      d.className = 'card space-y-3';
+      var t = totalStock(it), isLow = t <= num(it.low);
+      var unitProfit = num(it.price) - num(it.cost);
+
+      d.innerHTML =
+        '<div class="flex items-start justify-between gap-2">' +
+          '<div>' +
+            '<div class="flex items-center gap-2 flex-wrap">' +
+              '<b class="text-lg">' + esc(it.name) + '</b>' +
+              (it.ver ? '<span class="text-xs font-semibold px-2.5 py-0.5 rounded-full bg-[var(--field)] border border-[var(--line)]">' + esc(it.ver) + '</span>' : '') +
+            '</div>' +
+            '<div class="text-xs text-[var(--muted)] mt-0.5">Profit per jersey: <b class="text-[var(--good)]">' + fmt(unitProfit) + '</b></div>' +
+          '</div>' +
+          '<span class="chip ' + (t <= 0 ? 'due' : isLow ? 'warn' : 'paid') + '">' +
+            (t <= 0 ? 'Out of stock' : isLow ? 'Low Stock: ' + t + ' pcs' : 'In Stock: ' + t + ' pcs') +
+          '</span>' +
+        '</div>' +
+
+        '<div class="grid grid-cols-3 gap-2.5">' +
+          '<div><label class="block text-xs text-[var(--muted)] mb-1">Selling Price (₹)</label><input class="e-price font-semibold" type="number" inputmode="decimal" min="0"></div>' +
+          '<div><label class="block text-xs text-[var(--muted)] mb-1">Your Cost (₹)</label><input class="e-cost" type="number" inputmode="decimal" min="0"></div>' +
+          '<div><label class="block text-xs text-[var(--muted)] mb-1">Low Alert At</label><input class="e-low" type="number" inputmode="numeric" min="0"></div>' +
+        '</div>' +
+
+        '<div>' +
+          '<span class="block text-xs font-semibold text-[var(--muted)] mb-1.5">Stock by Size (tap +/- or type)</span>' +
+          '<div class="grid grid-cols-5 gap-2">' +
+            SIZES.map(function(z){
+              return '<div class="sz-box">' +
+                '<label>' + z + '</label>' +
+                '<input class="e-' + z + '" type="number" inputmode="numeric" min="0">' +
+                '<div class="sz-step">' +
+                  '<button type="button" data-z="' + z + '" data-d="-1">−</button>' +
+                  '<button type="button" data-z="' + z + '" data-d="1">+</button>' +
+                '</div>' +
+              '</div>';
+            }).join('') +
+          '</div>' +
+        '</div>' +
+
+        '<div class="flex justify-between items-center pt-2 border-t border-[var(--line)]">' +
+          '<span class="text-xs text-[var(--muted)]">Stock Value: <b>' + fmt(t * num(it.cost)) + '</b></span>' +
+          '<button class="btn btn-del btn-sm dx">🗑️ Delete Jersey</button>' +
+        '</div>';
+
+      d.querySelector('.e-price').value = it.price;
+      d.querySelector('.e-cost').value = it.cost;
+      d.querySelector('.e-low').value = it.low;
+
+      [['.e-price', 'price'], ['.e-cost', 'cost'], ['.e-low', 'low']].forEach(function(pair){
+        d.querySelector(pair[0]).onchange = function(){
+          it[pair[1]] = num(this.value);
+          persist();
+          renderStock();
+        };
+      });
+
+      SIZES.forEach(function(z){
+        var inp = d.querySelector('.e-' + z);
+        inp.value = num(it.sizes[z]);
+        inp.onchange = function(){
+          it.sizes[z] = Math.max(0, num(this.value));
+          persist();
+          renderStock();
+        };
+      });
+
+      d.querySelectorAll('.sz-step button').forEach(function(btn){
+        btn.onclick = function(){
+          var z = btn.dataset.z;
+          var delta = parseInt(btn.dataset.d, 10);
+          it.sizes[z] = Math.max(0, num(it.sizes[z]) + delta);
+          persist();
+          renderStock();
+        };
+      });
+
+      var x = d.querySelector('.dx');
+      x.onclick = function(){
+        if (x.dataset.s) {
+          S.items = S.items.filter(function(i){ return i.id !== it.id; });
+          persist();
+          renderStock();
+          toast('Jersey removed');
+        } else {
+          x.dataset.s = 1;
+          x.textContent = 'Tap again to delete';
+          setTimeout(function(){ x.dataset.s = ''; x.textContent = '🗑️ Delete Jersey'; }, 3000);
+        }
+      };
+
+      L.appendChild(d);
+    });
+  }
+
+  $('iadd').onclick = function(){
+    var n = $('iname').value.trim();
+    if (!n) { toast('Enter a jersey name'); return; }
+    var v = $('iver').value;
+    if (findItem(dn({ name: n, ver: v }))) {
+      toast('That jersey & version already exists in stock');
+      return;
+    }
+    var sz = {};
+    SIZES.forEach(function(z){ sz[z] = num($('is-' + z).value); });
+    S.items.push({
+      id: uid(),
+      name: n,
+      ver: v,
+      price: num($('iprice').value),
+      cost: num($('icost').value),
+      sizes: sz,
+      low: $('ilow').value === '' ? 5 : num($('ilow').value)
+    });
+    ['iname', 'iprice', 'icost', 'ilow'].forEach(function(i){ $(i).value = ''; });
+    SIZES.forEach(function(z){ $('is-' + z).value = ''; });
+    persist();
+    renderStock();
+    toast('Added ' + n + ' to stock');
+  };
+
+  function offOpts(){
+    $('offpick').innerHTML =
+      '<option value="">✨ Pick a jersey from stock to auto-write promo…</option>' +
+      S.items.map(function(it){
+        return '<option value="' + it.id + '">' + esc(dn(it)) + ' (' + fmt(it.price) + ')</option>';
+      }).join('');
+  }
+  $('offpick').onchange = function(){
+    var it = byId($('offpick').value);
+    if (!it) return;
+    var av = SIZES.filter(function(z){ return num(it.sizes[z]) > 0; });
+    var ig = ($('binsta').value || '').trim();
+    var igLine = ig ? '\n📸 Check out our page: ' + (ig.charAt(0) === '@' ? ig : '@' + ig) : '';
+    $('offer').value =
+      'Hi {name}! ⚽ *' + dn(it) + '* is now available at just *' + fmt(it.price) + '*.\n' +
+      (av.length ? '✅ Sizes in stock: ' + av.join(', ') + '.\n' : '🔥 Pre-orders open now!\n') +
+      'Reply to this message to book yours' + ($('bname').value ? ' from *' + $('bname').value + '*' : '') + '!' +
+      ($('bphone').value ? '\n📞 Call/WA: ' + $('bphone').value : '') +
+      igLine;
+    S.offer = $('offer').value;
+    persist();
+  };
+
+  /* ==================== CUSTOMERS & WHATSAPP CRM ==================== */
+  function pk(p){
+    var d = (p || '').replace(/\D/g, '');
+    return d.length > 10 ? d.slice(-10) : d;
+  }
+  function custList(){
+    var m = {};
+    function get(name, phone){
+      var k = pk(phone) || ('n:' + (name || '').trim().toLowerCase());
+      if (k === 'n:') return null;
+      return m[k] = m[k] || { key: k, name: name || '', phone: phone || '', orders: 0, pcs: 0, spent: 0, due: 0, last: '' };
+    }
+    S.cust.forEach(function(c){
+      var o = get(c.name, c.phone);
+      if (o) {
+        o.manual = c.id;
+        if (c.name) o.name = c.name;
+        if (c.phone) o.phone = c.phone;
+      }
+    });
+    S.inv.forEach(function(v){
+      var o = get(v.cname, v.cphone);
+      if (!o) return;
+      if (!o.name && v.cname) o.name = v.cname;
+      if (!o.phone && v.cphone) o.phone = v.cphone;
+      o.orders++;
+      o.pcs += v.items.reduce(function(s, i){ return s + i.qty; }, 0);
+      o.spent += v.total;
+      o.due += balOf(v);
+      if (v.date > o.last) o.last = v.date;
+    });
+    return Object.keys(m).map(function(k){ return m[k]; });
+  }
+
+  function renderCust(){
+    offOpts();
+    var q = ($('csearch').value || '').trim().toLowerCase(),
+        L = $('custlist'),
+        all = custList().sort(function(a, b){ return b.spent - a.spent; });
+    $('ccount').textContent = '(' + all.length + ')';
+
+    var list = all.filter(function(c){
+      return !q || (c.name + ' ' + c.phone).toLowerCase().indexOf(q) >= 0;
+    });
+
+    if (!list.length) {
+      L.innerHTML = '<div class="card text-center py-8 text-[var(--muted)]">' +
+        (all.length ? 'No matching customers.' : 'No customers yet. Customers appear automatically when you save invoices, or add one manually above.') +
+      '</div>';
+      return;
+    }
+
+    L.innerHTML = '';
+    list.forEach(function(c){
+      var d = document.createElement('div');
+      d.className = 'card !p-4 flex flex-col sm:flex-row sm:items-center justify-between gap-3';
+      var sent = S.sent[c.key];
+      d.innerHTML =
+        '<div class="space-y-0.5">' +
+          '<div class="flex items-center gap-2 flex-wrap">' +
+            '<b class="text-base">' + esc(c.name || 'Unnamed Customer') + '</b>' +
+            (c.orders >= 3 ? '<span class="chip paid !py-0 !px-2">⭐ Regular</span>' : '') +
+            (c.due > 0 ? '<span class="chip due !py-0 !px-2">Due ' + fmt(c.due) + '</span>' : '') +
+          '</div>' +
+          '<div class="text-xs text-[var(--muted)]">' +
+            '📞 ' + esc(c.phone || 'No phone') +
+            (c.last ? ' · Last order: ' + esc(c.last) : '') +
+          '</div>' +
+          '<div class="text-xs text-[var(--muted)]">' +
+            '🛍️ <b>' + c.orders + '</b> order' + (c.orders === 1 ? '' : 's') + ' · 👕 <b>' + c.pcs + '</b> jerseys bought · Spent: <b class="text-[var(--ink)]">' + fmt(c.spent) + '</b>' +
+          '</div>' +
+        '</div>' +
+        '<div class="flex flex-wrap items-center gap-2">' +
+          (sent ? '<span class="text-[11px] text-[var(--muted)]">Messaged ' + esc(sent) + '</span>' : '') +
+          '<button class="btn btn-alt btn-sm bill-btn">🧾 New Bill</button>' +
+          '<button class="btn btn-wa btn-sm s">💬 Send Offer</button>' +
+          (c.manual ? '<button class="btn btn-del btn-sm d">Delete</button>' : '') +
+        '</div>';
+
+      d.querySelector('.bill-btn').onclick = function(){
+        blank();
+        $('cname').value = c.name || '';
+        $('cphone').value = c.phone || '';
+        tab('invoice');
+        toast('Started invoice for ' + (c.name || c.phone));
+      };
+
+      d.querySelector('.s').onclick = function(){
+        var msg = $('offer').value.trim();
+        if (!msg) { toast('Write or select an offer message above first'); $('offer').focus(); return; }
+        var ph = cleanPhone(c.phone);
+        if (!ph) { toast('No mobile number saved for this customer'); return; }
+        var first = (c.name || '').trim().split(/\s+/)[0] || 'there';
+        S.sent[c.key] = today();
+        persist();
+        this.textContent = '✓ Sent';
+        window.open('https://wa.me/' + ph + '?text=' + encodeURIComponent(msg.replace(/\{name\}/g, first)), '_blank');
+      };
+
+      var x = d.querySelector('.d');
+      if (x) {
+        x.onclick = function(){
+          if (x.dataset.s) {
+            S.cust = S.cust.filter(function(i){ return i.id !== c.manual; });
+            persist();
+            renderCust();
+          } else {
+            x.dataset.s = 1;
+            x.textContent = 'Confirm?';
+            setTimeout(function(){ x.dataset.s = ''; x.textContent = 'Delete'; }, 3000);
+          }
+        };
+      }
+      L.appendChild(d);
+    });
+  }
+
+  $('offer').value = S.offer;
+  $('offer').addEventListener('input', function(){ S.offer = $('offer').value; persist(); });
+  $('offcopy').onclick = function(){
+    $('offer').select();
+    try {
+      document.execCommand('copy');
+      toast('Offer message copied');
+    } catch(e){
+      toast('Select and copy the text');
+    }
+  };
+  $('csearch').addEventListener('input', renderCust);
+  $('cadd').onclick = function(){
+    var n = $('cn').value.trim(), p = $('cp').value.trim();
+    if (!n && !p) { toast('Enter customer name or mobile number'); return; }
+    S.cust.push({ id: uid(), name: n, phone: p });
+    $('cn').value = '';
+    $('cp').value = '';
+    persist();
+    renderCust();
+    toast('Customer added');
+  };
+
+  /* ==================== BACKUP, RESTORE & DEMO DATA ==================== */
+  $('bkshow').onclick = function(){
+    $('bk').value = JSON.stringify(S);
+    $('bk').select();
+  };
+  $('bkcopy').onclick = function(){
+    $('bk').value = JSON.stringify(S);
+    $('bk').select();
+    try {
+      document.execCommand('copy');
+      toast('Backup JSON copied to clipboard');
+    } catch(e){
+      toast('Select and copy the text');
+    }
+  };
+  $('bkdl').onclick = function(){
+    var blob = new Blob([JSON.stringify(S, null, 2)], { type: 'application/json' });
+    var a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = 'jersey-pos-backup-' + today() + '.json';
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+    toast('Backup file downloaded');
+  };
+  $('bkfile').onchange = function(e){
+    var f = e.target.files && e.target.files[0];
+    if (!f) return;
+    var r = new FileReader();
+    r.onload = function(){
+      $('bk').value = r.result;
+      $('bkrest').click();
+    };
+    r.readAsText(f);
+  };
+  $('bkrest').onclick = function(){
+    try {
+      var d = JSON.parse($('bk').value);
+      if (!d || !Array.isArray(d.inv) || !Array.isArray(d.exp)) throw 0;
+      S = {
+        inv: d.inv,
+        exp: d.exp,
+        biz: d.biz || {},
+        cust: d.cust || [],
+        items: d.items || [],
+        offer: d.offer || '',
+        sent: d.sent || {}
+      };
+      migrate();
+      persist();
+      ['bname', 'bphone', 'binsta', 'baddr', 'bupi'].forEach(function(i){ $(i).value = S.biz[i] || ''; });
+      $('offer').value = S.offer;
+      blank();
+      renderDash();
+      toast('Backup restored successfully!');
+    } catch(e){
+      toast('Invalid backup JSON text');
+    }
+  };
+
+  /* Load Realistic Demo Data */
+  $('demo-btn').onclick = function(){
+    var d0 = today();
+    var d1Date = new Date(); d1Date.setDate(d1Date.getDate() - 2); var d1 = iso(d1Date);
+    var d2Date = new Date(); d2Date.setDate(d2Date.getDate() - 8); var d2 = iso(d2Date);
+
+    if (!S.biz.bname) {
+      S.biz = {
+        bname: 'KICKOFF JERSEY STUDIO',
+        bphone: '9876543210',
+        binsta: '@kickoffjerseys.in',
+        baddr: '12 Sports Arcade, MG Road',
+        bupi: 'kickoffstudio@okicici'
+      };
+      ['bname', 'bphone', 'binsta', 'baddr', 'bupi'].forEach(function(i){ $(i).value = S.biz[i] || ''; });
+    }
+
+    if (!S.items.length) {
+      S.items = [
+        { id: 'j1', name: 'Real Madrid Home 24/25', ver: 'Player version', price: 999, cost: 520, low: 5, sizes: { S: 3, M: 6, L: 8, XL: 4, XXL: 2 } },
+        { id: 'j2', name: 'FC Barcelona Away Black 24/25', ver: 'Fan version', price: 799, cost: 400, low: 5, sizes: { S: 2, M: 5, L: 5, XL: 2, XXL: 1 } },
+        { id: 'j3', name: 'Argentina 3-Star World Cup', ver: 'Player version', price: 1099, cost: 550, low: 4, sizes: { S: 1, M: 2, L: 0, XL: 1, XXL: 0 } },
+        { id: 'j4', name: 'Manchester United 2008 UCL', ver: 'Retro', price: 1199, cost: 620, low: 4, sizes: { S: 2, M: 4, L: 4, XL: 3, XXL: 1 } },
+        { id: 'j5', name: 'Brazil Home Classic Yellow', ver: 'Fan version', price: 749, cost: 380, low: 5, sizes: { S: 0, M: 1, L: 1, XL: 0, XXL: 0 } }
+      ];
+    }
+
+    if (!S.inv.length) {
+      S.inv = [
+        {
+          id: uid(), no: 'INV-001', date: d2, due: d1, cname: 'Thunder FC (Karthik)', cphone: '9845012345',
+          items: [
+            { iid: 'j2', desc: 'FC Barcelona Away Black 24/25 – Fan version', size: 'M', qty: 6, rate: 799, cost: 400 },
+            { iid: 'j2', desc: 'FC Barcelona Away Black 24/25 – Fan version', size: 'L', qty: 5, rate: 799, cost: 400 }
+          ],
+          disc: 289, adv: 8500, notes: 'Team bulk order with custom back numbers', total: 8500, cogs: 4400
+        },
+        {
+          id: uid(), no: 'INV-002', date: d1, due: d0, cname: 'Rohit Sharma', cphone: '9900112233',
+          items: [
+            { iid: 'j1', desc: 'Real Madrid Home 24/25 – Player version', size: 'L', qty: 2, rate: 999, cost: 520 },
+            { iid: 'j4', desc: 'Manchester United 2008 UCL – Retro', size: 'XL', qty: 1, rate: 1199, cost: 620 }
+          ],
+          disc: 97, adv: 1500, notes: 'Print MBAPPE #9 on 1 Real Madrid L', total: 3100, cogs: 1660
+        },
+        {
+          id: uid(), no: 'INV-003', date: d0, due: d0, cname: 'Aarav Menon', cphone: '9741223344',
+          items: [
+            { iid: 'j3', desc: 'Argentina 3-Star World Cup – Player version', size: 'M', qty: 1, rate: 1099, cost: 550 }
+          ],
+          disc: 0, adv: 1099, notes: 'MESSI #10 print included', total: 1099, cogs: 550
+        }
+      ];
+    }
+
+    if (!S.exp.length) {
+      S.exp = [
+        { id: uid(), date: d2, cat: 'Stock / Printing', label: 'Heat press vinyl & player font numbers', amt: 650 },
+        { id: uid(), date: d1, cat: 'Packaging / Courier', label: 'DTDC Express shipping charges', amt: 280 },
+        { id: uid(), date: d0, cat: 'Marketing', label: 'Weekend Instagram Reel promotion boost', amt: 500 }
+      ];
+    }
+
+    if (!S.offer) {
+      S.offer = 'Hi {name}! ⚽ New 24/25 Player & Retro Jerseys have just arrived at *KICKOFF JERSEY STUDIO*! Reply to check sizes & grab 10% off this week.\n📸 Instagram: @kickoffjerseys.in';
+      $('offer').value = S.offer;
+    }
+
+    persist();
+    blank();
+    refreshRows();
+    renderList();
+    renderStock();
+    renderDash();
+    renderExp();
+    renderCust();
+    toast('✨ Sample jerseys, invoices & analytics loaded!');
+  };
+
+  // Initialize App
+  migrate();
+  offOpts();
+  updateBadges();
+  blank();
+})();
+</script>
+
+</body></html>
